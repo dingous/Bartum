@@ -1,0 +1,563 @@
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EasyBarModelStoreContainer" CdmEntityContainer="EasyBarEntities">
+    <EntitySetMapping Name="EB_Bairro">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_Bairro">
+        <MappingFragment StoreEntitySet="EB_Bairro">
+          <ScalarProperty Name="nrTaxaEntrega" ColumnName="nrTaxaEntrega" />
+          <ScalarProperty Name="dsNome" ColumnName="dsNome" />
+          <ScalarProperty Name="CidadeID" ColumnName="CidadeID" />
+          <ScalarProperty Name="BairroID" ColumnName="BairroID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_Balcao">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_Balcao">
+        <MappingFragment StoreEntitySet="EB_Balcao">
+          <ScalarProperty Name="dsBalcao" ColumnName="dsBalcao" />
+          <ScalarProperty Name="BalcaoID" ColumnName="BalcaoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_CadastroMesa">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_CadastroMesa">
+        <MappingFragment StoreEntitySet="EB_CadastroMesa">
+          <ScalarProperty Name="dsMesa" ColumnName="dsMesa" />
+          <ScalarProperty Name="MesaID" ColumnName="MesaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_Caixa">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_Caixa">
+        <MappingFragment StoreEntitySet="EB_Caixa">
+          <ScalarProperty Name="UsuarioIDAbertura" ColumnName="UsuarioIDAbertura" />
+          <ScalarProperty Name="UsuarioIDFechamento" ColumnName="UsuarioIDFechamento" />
+          <ScalarProperty Name="fechamentoDiferenca" ColumnName="fechamentoDiferenca" />
+          <ScalarProperty Name="fechamentoFundoCaixaDiaPosterior" ColumnName="fechamentoFundoCaixaDiaPosterior" />
+          <ScalarProperty Name="fechamentoTotalFisicoCaixa" ColumnName="fechamentoTotalFisicoCaixa" />
+          <ScalarProperty Name="fechamentoSaldoComputado" ColumnName="fechamentoSaldoComputado" />
+          <ScalarProperty Name="dsStatus" ColumnName="dsStatus" />
+          <ScalarProperty Name="vlnaAberturaCaixa" ColumnName="vlnaAberturaCaixa" />
+          <ScalarProperty Name="vlCaixa" ColumnName="vlCaixa" />
+          <ScalarProperty Name="dtCaixaFechamento" ColumnName="dtCaixaFechamento" />
+          <ScalarProperty Name="dtCaixa" ColumnName="dtCaixa" />
+          <ScalarProperty Name="CaixaID" ColumnName="CaixaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_CaixaHistoricoFechamento">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_CaixaHistoricoFechamento">
+        <MappingFragment StoreEntitySet="EB_CaixaHistoricoFechamento">
+          <ScalarProperty Name="dtCaixaFechamento" ColumnName="dtCaixaFechamento" />
+          <ScalarProperty Name="fechamentoDiferenca" ColumnName="fechamentoDiferenca" />
+          <ScalarProperty Name="fechamentoFundoCaixaDiaPosterior" ColumnName="fechamentoFundoCaixaDiaPosterior" />
+          <ScalarProperty Name="fechamentoTotalFisicoCaixa" ColumnName="fechamentoTotalFisicoCaixa" />
+          <ScalarProperty Name="fechamentoSaldoComputado" ColumnName="fechamentoSaldoComputado" />
+          <ScalarProperty Name="CaixaID" ColumnName="CaixaID" />
+          <ScalarProperty Name="UsuarioID" ColumnName="UsuarioID" />
+          <ScalarProperty Name="HistoricoID" ColumnName="HistoricoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_Cidade">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_Cidade">
+        <MappingFragment StoreEntitySet="EB_Cidade">
+          <ScalarProperty Name="dsNome" ColumnName="dsNome" />
+          <ScalarProperty Name="EstadoID" ColumnName="EstadoID" />
+          <ScalarProperty Name="CidadeID" ColumnName="CidadeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_Cliente">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_Cliente">
+        <MappingFragment StoreEntitySet="EB_Cliente">
+          <ScalarProperty Name="flExcluido" ColumnName="flExcluido" />
+          <ScalarProperty Name="convenio" ColumnName="convenio" />
+          <ScalarProperty Name="nrStatus" ColumnName="nrStatus" />
+          <ScalarProperty Name="dtCadastro" ColumnName="dtCadastro" />
+          <ScalarProperty Name="dsEmail" ColumnName="dsEmail" />
+          <ScalarProperty Name="nrCpfCpnj" ColumnName="nrCpfCpnj" />
+          <ScalarProperty Name="dtNascimento" ColumnName="dtNascimento" />
+          <ScalarProperty Name="dsNome" ColumnName="dsNome" />
+          <ScalarProperty Name="UsuarioID" ColumnName="UsuarioID" />
+          <ScalarProperty Name="ContatoID" ColumnName="ContatoID" />
+          <ScalarProperty Name="EnderecoID" ColumnName="EnderecoID" />
+          <ScalarProperty Name="ClienteID" ColumnName="ClienteID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_ClienteOcorrencias">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_ClienteOcorrencias">
+        <MappingFragment StoreEntitySet="EB_ClienteOcorrencias">
+          <ScalarProperty Name="dtOcorrencia" ColumnName="dtOcorrencia" />
+          <ScalarProperty Name="dsOcorrencia" ColumnName="dsOcorrencia" />
+          <ScalarProperty Name="ClienteID" ColumnName="ClienteID" />
+          <ScalarProperty Name="OcorrenciaID" ColumnName="OcorrenciaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_ConfiguracoesSistema">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_ConfiguracoesSistema">
+        <MappingFragment StoreEntitySet="EB_ConfiguracoesSistema">
+          <ScalarProperty Name="ServidorPorta" ColumnName="ServidorPorta" />
+          <ScalarProperty Name="ServidorIP" ColumnName="ServidorIP" />
+          <ScalarProperty Name="flTaxaServicoAtiva" ColumnName="flTaxaServicoAtiva" />
+          <ScalarProperty Name="impressaoRodape" ColumnName="impressaoRodape" />
+          <ScalarProperty Name="impressaoCabecalho" ColumnName="impressaoCabecalho" />
+          <ScalarProperty Name="ConfID" ColumnName="ConfID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_ContaCorrente">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_ContaCorrente">
+        <MappingFragment StoreEntitySet="EB_ContaCorrente">
+          <ScalarProperty Name="dtCadastro" ColumnName="dtCadastro" />
+          <ScalarProperty Name="nrTelefone" ColumnName="nrTelefone" />
+          <ScalarProperty Name="dsNomeGerente" ColumnName="dsNomeGerente" />
+          <ScalarProperty Name="dsAgencia" ColumnName="dsAgencia" />
+          <ScalarProperty Name="mnLimite" ColumnName="mnLimite" />
+          <ScalarProperty Name="mnSaldoInicial" ColumnName="mnSaldoInicial" />
+          <ScalarProperty Name="dtReferencia" ColumnName="dtReferencia" />
+          <ScalarProperty Name="nrContaNumero" ColumnName="nrContaNumero" />
+          <ScalarProperty Name="dsDescricao" ColumnName="dsDescricao" />
+          <ScalarProperty Name="ContaID" ColumnName="ContaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_ContaLancto">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_ContaLancto">
+        <MappingFragment StoreEntitySet="EB_ContaLancto">
+          <ScalarProperty Name="dsObservacao" ColumnName="dsObservacao" />
+          <ScalarProperty Name="nrValor" ColumnName="nrValor" />
+          <ScalarProperty Name="TipoLanctoID" ColumnName="TipoLanctoID" />
+          <ScalarProperty Name="ContaID" ColumnName="ContaID" />
+          <ScalarProperty Name="LanctoID" ColumnName="LanctoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_Contas">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_Contas">
+        <MappingFragment StoreEntitySet="EB_Contas">
+          <ScalarProperty Name="flBaixada" ColumnName="flBaixada" />
+          <ScalarProperty Name="DestOuOrigDescontoContaCorrenteID" ColumnName="DestOuOrigDescontoContaCorrenteID" />
+          <ScalarProperty Name="DestDescontoID" ColumnName="DestDescontoID" />
+          <ScalarProperty Name="fechaValorPago" ColumnName="fechaValorPago" />
+          <ScalarProperty Name="dtPagamentoOuRecebimento" ColumnName="dtPagamentoOuRecebimento" />
+          <ScalarProperty Name="observacoes" ColumnName="observacoes" />
+          <ScalarProperty Name="dtVencimento" ColumnName="dtVencimento" />
+          <ScalarProperty Name="vlConta" ColumnName="vlConta" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="dtlancto" ColumnName="dtlancto" />
+          <ScalarProperty Name="usuarioID" ColumnName="usuarioID" />
+          <ScalarProperty Name="TipoLanctoID" ColumnName="TipoLanctoID" />
+          <ScalarProperty Name="PlanoContaID" ColumnName="PlanoContaID" />
+          <ScalarProperty Name="FormaPagamentoID" ColumnName="FormaPagamentoID" />
+          <ScalarProperty Name="FornecedorID" ColumnName="FornecedorID" />
+          <ScalarProperty Name="clienteID" ColumnName="clienteID" />
+          <ScalarProperty Name="lanctoID" ColumnName="lanctoID" />
+          <ScalarProperty Name="pai" ColumnName="pai" />
+          <ScalarProperty Name="contasID" ColumnName="contasID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_ContasDestDesconto">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_ContasDestDesconto">
+        <MappingFragment StoreEntitySet="EB_ContasDestDesconto">
+          <ScalarProperty Name="dsDestinoDesconto" ColumnName="dsDestinoDesconto" />
+          <ScalarProperty Name="DestDescontoID" ColumnName="DestDescontoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_ContaTipoLancto">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_ContaTipoLancto">
+        <MappingFragment StoreEntitySet="EB_ContaTipoLancto">
+          <ScalarProperty Name="dsTipoLancto" ColumnName="dsTipoLancto" />
+          <ScalarProperty Name="TipoLanctoID" ColumnName="TipoLanctoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_Contato">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_Contato">
+        <MappingFragment StoreEntitySet="EB_Contato">
+          <ScalarProperty Name="dsNomeContato" ColumnName="dsNomeContato" />
+          <ScalarProperty Name="nrCelular" ColumnName="nrCelular" />
+          <ScalarProperty Name="nrTelefone4" ColumnName="nrTelefone4" />
+          <ScalarProperty Name="nrTelefone3" ColumnName="nrTelefone3" />
+          <ScalarProperty Name="nrTelefone2" ColumnName="nrTelefone2" />
+          <ScalarProperty Name="nrTelefone1" ColumnName="nrTelefone1" />
+          <ScalarProperty Name="ContatoID" ColumnName="ContatoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_Empresa">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_Empresa">
+        <MappingFragment StoreEntitySet="EB_Empresa">
+          <ScalarProperty Name="inscEstadual" ColumnName="inscEstadual" />
+          <ScalarProperty Name="siglaUF" ColumnName="siglaUF" />
+          <ScalarProperty Name="DsCidade" ColumnName="DsCidade" />
+          <ScalarProperty Name="dsBairro" ColumnName="dsBairro" />
+          <ScalarProperty Name="dsEndereco" ColumnName="dsEndereco" />
+          <ScalarProperty Name="dsEmail" ColumnName="dsEmail" />
+          <ScalarProperty Name="cel" ColumnName="cel" />
+          <ScalarProperty Name="tel2" ColumnName="tel2" />
+          <ScalarProperty Name="tel1" ColumnName="tel1" />
+          <ScalarProperty Name="nrCnpj" ColumnName="nrCnpj" />
+          <ScalarProperty Name="dsRazaoSocial" ColumnName="dsRazaoSocial" />
+          <ScalarProperty Name="dsNomeFantasia" ColumnName="dsNomeFantasia" />
+          <ScalarProperty Name="EmpresaID" ColumnName="EmpresaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_Endereco">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_Endereco">
+        <MappingFragment StoreEntitySet="EB_Endereco">
+          <ScalarProperty Name="flEnderecoPrincipal" ColumnName="flEnderecoPrincipal" />
+          <ScalarProperty Name="dsReferencias" ColumnName="dsReferencias" />
+          <ScalarProperty Name="dsRegiao" ColumnName="dsRegiao" />
+          <ScalarProperty Name="nrCEP" ColumnName="nrCEP" />
+          <ScalarProperty Name="nrNumero" ColumnName="nrNumero" />
+          <ScalarProperty Name="dsComplemento" ColumnName="dsComplemento" />
+          <ScalarProperty Name="dsLogradouro" ColumnName="dsLogradouro" />
+          <ScalarProperty Name="ClienteID" ColumnName="ClienteID" />
+          <ScalarProperty Name="BairroID" ColumnName="BairroID" />
+          <ScalarProperty Name="CidadeID" ColumnName="CidadeID" />
+          <ScalarProperty Name="EnderecoID" ColumnName="EnderecoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_Entregador">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_Entregador">
+        <MappingFragment StoreEntitySet="EB_Entregador">
+          <ScalarProperty Name="dtCadastro" ColumnName="dtCadastro" />
+          <ScalarProperty Name="nrTelefoneCelular" ColumnName="nrTelefoneCelular" />
+          <ScalarProperty Name="nrTelefoneFixo" ColumnName="nrTelefoneFixo" />
+          <ScalarProperty Name="dsEndereco" ColumnName="dsEndereco" />
+          <ScalarProperty Name="dsNome" ColumnName="dsNome" />
+          <ScalarProperty Name="EntregadorID" ColumnName="EntregadorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_Estado">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_Estado">
+        <MappingFragment StoreEntitySet="EB_Estado">
+          <ScalarProperty Name="dsSigla" ColumnName="dsSigla" />
+          <ScalarProperty Name="dsNome" ColumnName="dsNome" />
+          <ScalarProperty Name="EstadoID" ColumnName="EstadoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_EstoqueLancItens">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_EstoqueLancItens">
+        <MappingFragment StoreEntitySet="EB_EstoqueLancItens">
+          <ScalarProperty Name="dtLancto" ColumnName="dtLancto" />
+          <ScalarProperty Name="vlTotal" ColumnName="vlTotal" />
+          <ScalarProperty Name="nrPrCusto" ColumnName="nrPrCusto" />
+          <ScalarProperty Name="nrQuantidade" ColumnName="nrQuantidade" />
+          <ScalarProperty Name="ProdutoID" ColumnName="ProdutoID" />
+          <ScalarProperty Name="EstoqueLanctoID" ColumnName="EstoqueLanctoID" />
+          <ScalarProperty Name="EstoqueLanctoItemID" ColumnName="EstoqueLanctoItemID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_EstoqueLancto">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_EstoqueLancto">
+        <MappingFragment StoreEntitySet="EB_EstoqueLancto">
+          <ScalarProperty Name="dtLancto" ColumnName="dtLancto" />
+          <ScalarProperty Name="nrNota" ColumnName="nrNota" />
+          <ScalarProperty Name="FornecedorID" ColumnName="FornecedorID" />
+          <ScalarProperty Name="UsuarioID" ColumnName="UsuarioID" />
+          <ScalarProperty Name="TipoMovID" ColumnName="TipoMovID" />
+          <ScalarProperty Name="EstoqueLanctoID" ColumnName="EstoqueLanctoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_FormaPagamento">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_FormaPagamento">
+        <MappingFragment StoreEntitySet="EB_FormaPagamento">
+          <ScalarProperty Name="Flexcluido" ColumnName="Flexcluido" />
+          <ScalarProperty Name="dtCadastro" ColumnName="dtCadastro" />
+          <ScalarProperty Name="flMostrarnoContas" ColumnName="flMostrarnoContas" />
+          <ScalarProperty Name="ordem" ColumnName="ordem" />
+          <ScalarProperty Name="dsForma" ColumnName="dsForma" />
+          <ScalarProperty Name="CondicaoID" ColumnName="CondicaoID" />
+          <ScalarProperty Name="FormaPagamentoID" ColumnName="FormaPagamentoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_FormaPagamentoCondicao">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_FormaPagamentoCondicao">
+        <MappingFragment StoreEntitySet="EB_FormaPagamentoCondicao">
+          <ScalarProperty Name="dsCondicaoPagamento" ColumnName="dsCondicaoPagamento" />
+          <ScalarProperty Name="CondicaoID" ColumnName="CondicaoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_Fornecedor">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_Fornecedor">
+        <MappingFragment StoreEntitySet="EB_Fornecedor">
+          <ScalarProperty Name="dtCadastro" ColumnName="dtCadastro" />
+          <ScalarProperty Name="dsObservacao" ColumnName="dsObservacao" />
+          <ScalarProperty Name="dsSite" ColumnName="dsSite" />
+          <ScalarProperty Name="dsEmail" ColumnName="dsEmail" />
+          <ScalarProperty Name="nrCEP" ColumnName="nrCEP" />
+          <ScalarProperty Name="dsUfEstado" ColumnName="dsUfEstado" />
+          <ScalarProperty Name="dsCidade" ColumnName="dsCidade" />
+          <ScalarProperty Name="dsLogradouro" ColumnName="dsLogradouro" />
+          <ScalarProperty Name="nrNomeContato" ColumnName="nrNomeContato" />
+          <ScalarProperty Name="nrCelular" ColumnName="nrCelular" />
+          <ScalarProperty Name="nrFax" ColumnName="nrFax" />
+          <ScalarProperty Name="nrTelefone" ColumnName="nrTelefone" />
+          <ScalarProperty Name="nrInsEstadual" ColumnName="nrInsEstadual" />
+          <ScalarProperty Name="nrCNPJ" ColumnName="nrCNPJ" />
+          <ScalarProperty Name="dsRazaoSocial" ColumnName="dsRazaoSocial" />
+          <ScalarProperty Name="dsNomeFantasia" ColumnName="dsNomeFantasia" />
+          <ScalarProperty Name="FornecedorID" ColumnName="FornecedorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_Garcon">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_Garcon">
+        <MappingFragment StoreEntitySet="EB_Garcon">
+          <ScalarProperty Name="dtCadastro" ColumnName="dtCadastro" />
+          <ScalarProperty Name="nrComissao" ColumnName="nrComissao" />
+          <ScalarProperty Name="nrCelular" ColumnName="nrCelular" />
+          <ScalarProperty Name="nrTelefone" ColumnName="nrTelefone" />
+          <ScalarProperty Name="dsEndereco" ColumnName="dsEndereco" />
+          <ScalarProperty Name="dsNome" ColumnName="dsNome" />
+          <ScalarProperty Name="GarconID" ColumnName="GarconID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_GrupoProduto">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_GrupoProduto">
+        <MappingFragment StoreEntitySet="EB_GrupoProduto">
+          <ScalarProperty Name="flExcluido" ColumnName="flExcluido" />
+          <ScalarProperty Name="pai" ColumnName="pai" />
+          <ScalarProperty Name="dsGrupo" ColumnName="dsGrupo" />
+          <ScalarProperty Name="GrupoID" ColumnName="GrupoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_Impressoras">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_Impressoras">
+        <MappingFragment StoreEntitySet="EB_Impressoras">
+          <ScalarProperty Name="dsImpressora" ColumnName="dsImpressora" />
+          <ScalarProperty Name="TipoProdutoID" ColumnName="TipoProdutoID" />
+          <ScalarProperty Name="ImpressoraID" ColumnName="ImpressoraID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_Lancamento">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_Lancamento">
+        <MappingFragment StoreEntitySet="EB_Lancamento">
+          <ScalarProperty Name="flComissaoGarconFoiPaga" ColumnName="flComissaoGarconFoiPaga" />
+          <ScalarProperty Name="flVendaCancelada" ColumnName="flVendaCancelada" />
+          <ScalarProperty Name="FechaTotalVendaFinalizada" ColumnName="FechaTotalVendaFinalizada" />
+          <ScalarProperty Name="FechaCouver" ColumnName="FechaCouver" />
+          <ScalarProperty Name="FechaTroco" ColumnName="FechaTroco" />
+          <ScalarProperty Name="FechaTotalPago" ColumnName="FechaTotalPago" />
+          <ScalarProperty Name="FechaAdiantamento" ColumnName="FechaAdiantamento" />
+          <ScalarProperty Name="FechaDescontos" ColumnName="FechaDescontos" />
+          <ScalarProperty Name="FechaAcrescimo" ColumnName="FechaAcrescimo" />
+          <ScalarProperty Name="FechaTotalConsumo" ColumnName="FechaTotalConsumo" />
+          <ScalarProperty Name="dsObservacao" ColumnName="dsObservacao" />
+          <ScalarProperty Name="dsNomeClienteBalcao" ColumnName="dsNomeClienteBalcao" />
+          <ScalarProperty Name="dtFimLancto" ColumnName="dtFimLancto" />
+          <ScalarProperty Name="dtLancto" ColumnName="dtLancto" />
+          <ScalarProperty Name="nrOcupantes" ColumnName="nrOcupantes" />
+          <ScalarProperty Name="ClienteID" ColumnName="ClienteID" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="UsuarioID" ColumnName="UsuarioID" />
+          <ScalarProperty Name="EntregadorID" ColumnName="EntregadorID" />
+          <ScalarProperty Name="BalcaoID" ColumnName="BalcaoID" />
+          <ScalarProperty Name="GarconID" ColumnName="GarconID" />
+          <ScalarProperty Name="TipoLanctoID" ColumnName="TipoLanctoID" />
+          <ScalarProperty Name="TipoVendaID" ColumnName="TipoVendaID" />
+          <ScalarProperty Name="MesaID" ColumnName="MesaID" />
+          <ScalarProperty Name="CaixaID" ColumnName="CaixaID" />
+          <ScalarProperty Name="LanctoID" ColumnName="LanctoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_LancamentoAdiantamentos">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_LancamentoAdiantamentos">
+        <MappingFragment StoreEntitySet="EB_LancamentoAdiantamentos">
+          <ScalarProperty Name="dtDataHora" ColumnName="dtDataHora" />
+          <ScalarProperty Name="dsObservacao" ColumnName="dsObservacao" />
+          <ScalarProperty Name="vlTroco" ColumnName="vlTroco" />
+          <ScalarProperty Name="vlRecebidoCliente" ColumnName="vlRecebidoCliente" />
+          <ScalarProperty Name="vlPagamentoCliente" ColumnName="vlPagamentoCliente" />
+          <ScalarProperty Name="vlTotalAPagarContaNoMomento" ColumnName="vlTotalAPagarContaNoMomento" />
+          <ScalarProperty Name="FormaPagamentoID" ColumnName="FormaPagamentoID" />
+          <ScalarProperty Name="LanctoID" ColumnName="LanctoID" />
+          <ScalarProperty Name="AdiantamentoID" ColumnName="AdiantamentoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_LancamentoCaixaBanco">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_LancamentoCaixaBanco">
+        <MappingFragment StoreEntitySet="EB_LancamentoCaixaBanco">
+          <ScalarProperty Name="dtInsercao" ColumnName="dtInsercao" />
+          <ScalarProperty Name="vlValor" ColumnName="vlValor" />
+          <ScalarProperty Name="dtLancto" ColumnName="dtLancto" />
+          <ScalarProperty Name="dsDescricao" ColumnName="dsDescricao" />
+          <ScalarProperty Name="ContasDestDescontoID" ColumnName="ContasDestDescontoID" />
+          <ScalarProperty Name="formaPagamentoID" ColumnName="formaPagamentoID" />
+          <ScalarProperty Name="TipoLanctoID" ColumnName="TipoLanctoID" />
+          <ScalarProperty Name="LanctoCaixaBancoID" ColumnName="LanctoCaixaBancoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_LancamentoFechamentoFormasPag">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_LancamentoFechamentoFormasPag">
+        <MappingFragment StoreEntitySet="EB_LancamentoFechamentoFormasPag">
+          <ScalarProperty Name="FlOrigemAdiantamento" ColumnName="FlOrigemAdiantamento" />
+          <ScalarProperty Name="vlForma" ColumnName="vlForma" />
+          <ScalarProperty Name="FormaPagamentoID" ColumnName="FormaPagamentoID" />
+          <ScalarProperty Name="LanctoID" ColumnName="LanctoID" />
+          <ScalarProperty Name="fechamentoID" ColumnName="fechamentoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_LancamentoItens">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_LancamentoItens">
+        <MappingFragment StoreEntitySet="EB_LancamentoItens">
+          <ScalarProperty Name="flFoiImpresso" ColumnName="flFoiImpresso" />
+          <ScalarProperty Name="flParaViagem" ColumnName="flParaViagem" />
+          <ScalarProperty Name="dtDataHora" ColumnName="dtDataHora" />
+          <ScalarProperty Name="dsObservacao" ColumnName="dsObservacao" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="nrPrecoVenda" ColumnName="nrPrecoVenda" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+          <ScalarProperty Name="ProdutoID" ColumnName="ProdutoID" />
+          <ScalarProperty Name="LanctoID" ColumnName="LanctoID" />
+          <ScalarProperty Name="PaiID" ColumnName="PaiID" />
+          <ScalarProperty Name="LanctoItemID" ColumnName="LanctoItemID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_LancamentoStatus">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_LancamentoStatus">
+        <MappingFragment StoreEntitySet="EB_LancamentoStatus">
+          <ScalarProperty Name="dsStatus" ColumnName="dsStatus" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_LanctoPedidos">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_LanctoPedidos">
+        <MappingFragment StoreEntitySet="EB_LanctoPedidos">
+          <ScalarProperty Name="flPagoAoEntregador" ColumnName="flPagoAoEntregador" />
+          <ScalarProperty Name="flRecebido" ColumnName="flRecebido" />
+          <ScalarProperty Name="LanctoID" ColumnName="LanctoID" />
+          <ScalarProperty Name="EnderecoID" ColumnName="EnderecoID" />
+          <ScalarProperty Name="ClienteID" ColumnName="ClienteID" />
+          <ScalarProperty Name="PedidoID" ColumnName="PedidoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_OrigemProduto">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_OrigemProduto">
+        <MappingFragment StoreEntitySet="EB_OrigemProduto">
+          <ScalarProperty Name="flPossuiAcentuacao" ColumnName="flPossuiAcentuacao" />
+          <ScalarProperty Name="tamanhoPapelImpressoraMilimetros" ColumnName="tamanhoPapelImpressoraMilimetros" />
+          <ScalarProperty Name="impressoraPedidos" ColumnName="impressoraPedidos" />
+          <ScalarProperty Name="impressaoObrigatoria" ColumnName="impressaoObrigatoria" />
+          <ScalarProperty Name="flMostrar" ColumnName="flMostrar" />
+          <ScalarProperty Name="dsImpressora" ColumnName="dsImpressora" />
+          <ScalarProperty Name="dsOrigem" ColumnName="dsOrigem" />
+          <ScalarProperty Name="OrigemID" ColumnName="OrigemID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_PlanoContas">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_PlanoContas">
+        <MappingFragment StoreEntitySet="EB_PlanoContas">
+          <ScalarProperty Name="flPadraoSaida" ColumnName="flPadraoSaida" />
+          <ScalarProperty Name="dsPlanoConta" ColumnName="dsPlanoConta" />
+          <ScalarProperty Name="Pai" ColumnName="Pai" />
+          <ScalarProperty Name="TipoLanctoID" ColumnName="TipoLanctoID" />
+          <ScalarProperty Name="PlanoContaID" ColumnName="PlanoContaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_Produto">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_Produto">
+        <MappingFragment StoreEntitySet="EB_Produto">
+          <ScalarProperty Name="flExcluido" ColumnName="flExcluido" />
+          <ScalarProperty Name="dtCadastro" ColumnName="dtCadastro" />
+          <ScalarProperty Name="nrEstoqueAtual" ColumnName="nrEstoqueAtual" />
+          <ScalarProperty Name="nrEstoqueMax" ColumnName="nrEstoqueMax" />
+          <ScalarProperty Name="nrEstoqueMin" ColumnName="nrEstoqueMin" />
+          <ScalarProperty Name="nrPrecoVenda" ColumnName="nrPrecoVenda" />
+          <ScalarProperty Name="nrPrecoCusto" ColumnName="nrPrecoCusto" />
+          <ScalarProperty Name="nrUnidade" ColumnName="nrUnidade" />
+          <ScalarProperty Name="dsProduto" ColumnName="dsProduto" />
+          <ScalarProperty Name="TipoProdutoID" ColumnName="TipoProdutoID" />
+          <ScalarProperty Name="FornecedorID" ColumnName="FornecedorID" />
+          <ScalarProperty Name="GrupoID" ColumnName="GrupoID" />
+          <ScalarProperty Name="OrigemID" ColumnName="OrigemID" />
+          <ScalarProperty Name="nrCodigoBarras" ColumnName="nrCodigoBarras" />
+          <ScalarProperty Name="ProdutoID" ColumnName="ProdutoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_ProdutoComp">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_ProdutoComp">
+        <MappingFragment StoreEntitySet="EB_ProdutoComp">
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+          <ScalarProperty Name="ProdutoID" ColumnName="ProdutoID" />
+          <ScalarProperty Name="ProdutoPrincipalID" ColumnName="ProdutoPrincipalID" />
+          <ScalarProperty Name="ProdutoCompID" ColumnName="ProdutoCompID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_TipoLancto">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_TipoLancto">
+        <MappingFragment StoreEntitySet="EB_TipoLancto">
+          <ScalarProperty Name="dsTipoLancto" ColumnName="dsTipoLancto" />
+          <ScalarProperty Name="TipoLanctoID" ColumnName="TipoLanctoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_TipoProduto">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_TipoProduto">
+        <MappingFragment StoreEntitySet="EB_TipoProduto">
+          <ScalarProperty Name="dsTipoProduto" ColumnName="dsTipoProduto" />
+          <ScalarProperty Name="TipoProdutoID" ColumnName="TipoProdutoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_TipoVenda">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_TipoVenda">
+        <MappingFragment StoreEntitySet="EB_TipoVenda">
+          <ScalarProperty Name="dtCadastro" ColumnName="dtCadastro" />
+          <ScalarProperty Name="dsTipoVenda" ColumnName="dsTipoVenda" />
+          <ScalarProperty Name="TipoVendaID" ColumnName="TipoVendaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EB_Usuario">
+      <EntityTypeMapping TypeName="EasyBarModel.EB_Usuario">
+        <MappingFragment StoreEntitySet="EB_Usuario">
+          <ScalarProperty Name="nrStatus" ColumnName="nrStatus" />
+          <ScalarProperty Name="dsSenha" ColumnName="dsSenha" />
+          <ScalarProperty Name="dsLogin" ColumnName="dsLogin" />
+          <ScalarProperty Name="dsNome" ColumnName="dsNome" />
+          <ScalarProperty Name="EmpresaID" ColumnName="EmpresaID" />
+          <ScalarProperty Name="UsuarioID" ColumnName="UsuarioID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="EasyBarModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

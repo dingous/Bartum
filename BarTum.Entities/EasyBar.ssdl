@@ -1,0 +1,1573 @@
+<Schema Namespace="EasyBarModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="EasyBarModelStoreContainer">
+    <EntitySet Name="EB_Bairro" EntityType="EasyBarModel.Store.EB_Bairro" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_Balcao" EntityType="EasyBarModel.Store.EB_Balcao" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_CadastroMesa" EntityType="EasyBarModel.Store.EB_CadastroMesa" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_Caixa" EntityType="EasyBarModel.Store.EB_Caixa" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_CaixaHistoricoFechamento" EntityType="EasyBarModel.Store.EB_CaixaHistoricoFechamento" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_Cidade" EntityType="EasyBarModel.Store.EB_Cidade" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_Cliente" EntityType="EasyBarModel.Store.EB_Cliente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_ClienteOcorrencias" EntityType="EasyBarModel.Store.EB_ClienteOcorrencias" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_ConfiguracoesSistema" EntityType="EasyBarModel.Store.EB_ConfiguracoesSistema" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_ContaCorrente" EntityType="EasyBarModel.Store.EB_ContaCorrente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_ContaLancto" EntityType="EasyBarModel.Store.EB_ContaLancto" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_Contas" EntityType="EasyBarModel.Store.EB_Contas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_ContasDestDesconto" EntityType="EasyBarModel.Store.EB_ContasDestDesconto" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_ContaTipoLancto" EntityType="EasyBarModel.Store.EB_ContaTipoLancto" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_Contato" EntityType="EasyBarModel.Store.EB_Contato" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_Empresa" EntityType="EasyBarModel.Store.EB_Empresa" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_Endereco" EntityType="EasyBarModel.Store.EB_Endereco" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_Entregador" EntityType="EasyBarModel.Store.EB_Entregador" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_Estado" EntityType="EasyBarModel.Store.EB_Estado" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_EstoqueLancItens" EntityType="EasyBarModel.Store.EB_EstoqueLancItens" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_EstoqueLancto" EntityType="EasyBarModel.Store.EB_EstoqueLancto" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_FormaPagamento" EntityType="EasyBarModel.Store.EB_FormaPagamento" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_FormaPagamentoCondicao" EntityType="EasyBarModel.Store.EB_FormaPagamentoCondicao" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_Fornecedor" EntityType="EasyBarModel.Store.EB_Fornecedor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_Garcon" EntityType="EasyBarModel.Store.EB_Garcon" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_GrupoProduto" EntityType="EasyBarModel.Store.EB_GrupoProduto" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_Impressoras" EntityType="EasyBarModel.Store.EB_Impressoras" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_Lancamento" EntityType="EasyBarModel.Store.EB_Lancamento" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_LancamentoAdiantamentos" EntityType="EasyBarModel.Store.EB_LancamentoAdiantamentos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_LancamentoCaixaBanco" EntityType="EasyBarModel.Store.EB_LancamentoCaixaBanco" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_LancamentoFechamentoFormasPag" EntityType="EasyBarModel.Store.EB_LancamentoFechamentoFormasPag" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_LancamentoItens" EntityType="EasyBarModel.Store.EB_LancamentoItens" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_LancamentoStatus" EntityType="EasyBarModel.Store.EB_LancamentoStatus" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_LanctoPedidos" EntityType="EasyBarModel.Store.EB_LanctoPedidos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_OrigemProduto" EntityType="EasyBarModel.Store.EB_OrigemProduto" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_PlanoContas" EntityType="EasyBarModel.Store.EB_PlanoContas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_Produto" EntityType="EasyBarModel.Store.EB_Produto" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_ProdutoComp" EntityType="EasyBarModel.Store.EB_ProdutoComp" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_TipoLancto" EntityType="EasyBarModel.Store.EB_TipoLancto" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_TipoProduto" EntityType="EasyBarModel.Store.EB_TipoProduto" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_TipoVenda" EntityType="EasyBarModel.Store.EB_TipoVenda" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EB_Usuario" EntityType="EasyBarModel.Store.EB_Usuario" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="EasyBarModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="EB_Caixa_fk" Association="EasyBarModel.Store.EB_Caixa_fk">
+      <End Role="EB_Usuario" EntitySet="EB_Usuario" />
+      <End Role="EB_Caixa" EntitySet="EB_Caixa" />
+    </AssociationSet>
+    <AssociationSet Name="EB_Caixa_fk2" Association="EasyBarModel.Store.EB_Caixa_fk2">
+      <End Role="EB_Usuario" EntitySet="EB_Usuario" />
+      <End Role="EB_Caixa" EntitySet="EB_Caixa" />
+    </AssociationSet>
+    <AssociationSet Name="EB_FormaPagamento_fk" Association="EasyBarModel.Store.EB_FormaPagamento_fk">
+      <End Role="EB_FormaPagamentoCondicao" EntitySet="EB_FormaPagamentoCondicao" />
+      <End Role="EB_FormaPagamento" EntitySet="EB_FormaPagamento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EB_Bairro__Cidad__34BEB830" Association="EasyBarModel.Store.FK__EB_Bairro__Cidad__34BEB830">
+      <End Role="EB_Cidade" EntitySet="EB_Cidade" />
+      <End Role="EB_Bairro" EntitySet="EB_Bairro" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EB_Cidade__Estad__2FFA0313" Association="EasyBarModel.Store.FK__EB_Cidade__Estad__2FFA0313">
+      <End Role="EB_Estado" EntitySet="EB_Estado" />
+      <End Role="EB_Cidade" EntitySet="EB_Cidade" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EB_Client__Clien__45E94432" Association="EasyBarModel.Store.FK__EB_Client__Clien__45E94432">
+      <End Role="EB_Cliente" EntitySet="EB_Cliente" />
+      <End Role="EB_ClienteOcorrencias" EntitySet="EB_ClienteOcorrencias" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EB_Client__Conta__6DAD1CC9" Association="EasyBarModel.Store.FK__EB_Client__Conta__6DAD1CC9">
+      <End Role="EB_Contato" EntitySet="EB_Contato" />
+      <End Role="EB_Cliente" EntitySet="EB_Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EB_Client__Ender__13D2C5B1" Association="EasyBarModel.Store.FK__EB_Client__Ender__13D2C5B1">
+      <End Role="EB_Endereco" EntitySet="EB_Endereco" />
+      <End Role="EB_Cliente" EntitySet="EB_Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EB_Client__Usuar__3F3C46A3" Association="EasyBarModel.Store.FK__EB_Client__Usuar__3F3C46A3">
+      <End Role="EB_Usuario" EntitySet="EB_Usuario" />
+      <End Role="EB_Cliente" EntitySet="EB_Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EB_ContaL__Conta__480696CE" Association="EasyBarModel.Store.FK__EB_ContaL__Conta__480696CE">
+      <End Role="EB_ContaCorrente" EntitySet="EB_ContaCorrente" />
+      <End Role="EB_ContaLancto" EntitySet="EB_ContaLancto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EB_ContaL__TipoL__48FABB07" Association="EasyBarModel.Store.FK__EB_ContaL__TipoL__48FABB07">
+      <End Role="EB_ContaTipoLancto" EntitySet="EB_ContaTipoLancto" />
+      <End Role="EB_ContaLancto" EntitySet="EB_ContaLancto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EB_Endere__Bairr__3A779186" Association="EasyBarModel.Store.FK__EB_Endere__Bairr__3A779186">
+      <End Role="EB_Bairro" EntitySet="EB_Bairro" />
+      <End Role="EB_Endereco" EntitySet="EB_Endereco" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EB_Endere__Cidad__39836D4D" Association="EasyBarModel.Store.FK__EB_Endere__Cidad__39836D4D">
+      <End Role="EB_Cidade" EntitySet="EB_Cidade" />
+      <End Role="EB_Endereco" EntitySet="EB_Endereco" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EB_Lancam__Caixa__5224328E" Association="EasyBarModel.Store.FK__EB_Lancam__Caixa__5224328E">
+      <End Role="EB_Caixa" EntitySet="EB_Caixa" />
+      <End Role="EB_Lancamento" EntitySet="EB_Lancamento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EB_Lancam__Entre__1CE72E9F" Association="EasyBarModel.Store.FK__EB_Lancam__Entre__1CE72E9F">
+      <End Role="EB_Entregador" EntitySet="EB_Entregador" />
+      <End Role="EB_Lancamento" EntitySet="EB_Lancamento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EB_Lancam__Garco__19169DBB" Association="EasyBarModel.Store.FK__EB_Lancam__Garco__19169DBB">
+      <End Role="EB_Garcon" EntitySet="EB_Garcon" />
+      <End Role="EB_Lancamento" EntitySet="EB_Lancamento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EB_Lancam__Lanct__5E8A0973" Association="EasyBarModel.Store.FK__EB_Lancam__Lanct__5E8A0973">
+      <End Role="EB_Lancamento" EntitySet="EB_Lancamento" />
+      <End Role="EB_LancamentoItens" EntitySet="EB_LancamentoItens" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EB_Lancam__MesaI__163A3110" Association="EasyBarModel.Store.FK__EB_Lancam__MesaI__163A3110">
+      <End Role="EB_CadastroMesa" EntitySet="EB_CadastroMesa" />
+      <End Role="EB_Lancamento" EntitySet="EB_Lancamento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EB_Lancam__Produ__34FEAF52" Association="EasyBarModel.Store.FK__EB_Lancam__Produ__34FEAF52">
+      <End Role="EB_Produto" EntitySet="EB_Produto" />
+      <End Role="EB_LancamentoItens" EntitySet="EB_LancamentoItens" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EB_Lancam__TipoL__18227982" Association="EasyBarModel.Store.FK__EB_Lancam__TipoL__18227982">
+      <End Role="EB_TipoLancto" EntitySet="EB_TipoLancto" />
+      <End Role="EB_Lancamento" EntitySet="EB_Lancamento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EB_Lancam__TipoV__172E5549" Association="EasyBarModel.Store.FK__EB_Lancam__TipoV__172E5549">
+      <End Role="EB_TipoVenda" EntitySet="EB_TipoVenda" />
+      <End Role="EB_Lancamento" EntitySet="EB_Lancamento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EB_Lancam__Usuar__1AFEE62D" Association="EasyBarModel.Store.FK__EB_Lancam__Usuar__1AFEE62D">
+      <End Role="EB_Usuario" EntitySet="EB_Usuario" />
+      <End Role="EB_Lancamento" EntitySet="EB_Lancamento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EB_Produt__Forne__5EE9FC26" Association="EasyBarModel.Store.FK__EB_Produt__Forne__5EE9FC26">
+      <End Role="EB_Fornecedor" EntitySet="EB_Fornecedor" />
+      <End Role="EB_Produto" EntitySet="EB_Produto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EB_Produt__Grupo__5D01B3B4" Association="EasyBarModel.Store.FK__EB_Produt__Grupo__5D01B3B4">
+      <End Role="EB_GrupoProduto" EntitySet="EB_GrupoProduto" />
+      <End Role="EB_Produto" EntitySet="EB_Produto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EB_Produt__Orige__5DF5D7ED" Association="EasyBarModel.Store.FK__EB_Produt__Orige__5DF5D7ED">
+      <End Role="EB_OrigemProduto" EntitySet="EB_OrigemProduto" />
+      <End Role="EB_Produto" EntitySet="EB_Produto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EB_Produt__TipoP__5FDE205F" Association="EasyBarModel.Store.FK__EB_Produt__TipoP__5FDE205F">
+      <End Role="EB_TipoProduto" EntitySet="EB_TipoProduto" />
+      <End Role="EB_Produto" EntitySet="EB_Produto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_Caixa_fk" Association="EasyBarModel.Store.FK_EB_Caixa_fk">
+      <End Role="EB_Usuario" EntitySet="EB_Usuario" />
+      <End Role="EB_Caixa" EntitySet="EB_Caixa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_Caixa_fk2" Association="EasyBarModel.Store.FK_EB_Caixa_fk2">
+      <End Role="EB_Usuario" EntitySet="EB_Usuario" />
+      <End Role="EB_Caixa" EntitySet="EB_Caixa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_CaixaHistoricoFechamento_fk" Association="EasyBarModel.Store.FK_EB_CaixaHistoricoFechamento_fk">
+      <End Role="EB_Usuario" EntitySet="EB_Usuario" />
+      <End Role="EB_CaixaHistoricoFechamento" EntitySet="EB_CaixaHistoricoFechamento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_CaixaHistoricoFechamento_fk2" Association="EasyBarModel.Store.FK_EB_CaixaHistoricoFechamento_fk2">
+      <End Role="EB_Caixa" EntitySet="EB_Caixa" />
+      <End Role="EB_CaixaHistoricoFechamento" EntitySet="EB_CaixaHistoricoFechamento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_CONTA_REFERENCE_EB_CLIEN" Association="EasyBarModel.Store.FK_EB_CONTA_REFERENCE_EB_CLIEN">
+      <End Role="EB_Cliente" EntitySet="EB_Cliente" />
+      <End Role="EB_Contas" EntitySet="EB_Contas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_CONTA_REFERENCE_EB_FORMA" Association="EasyBarModel.Store.FK_EB_CONTA_REFERENCE_EB_FORMA">
+      <End Role="EB_FormaPagamento" EntitySet="EB_FormaPagamento" />
+      <End Role="EB_Contas" EntitySet="EB_Contas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_CONTA_REFERENCE_EB_LANCA" Association="EasyBarModel.Store.FK_EB_CONTA_REFERENCE_EB_LANCA">
+      <End Role="EB_Lancamento" EntitySet="EB_Lancamento" />
+      <End Role="EB_Contas" EntitySet="EB_Contas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_CONTA_REFERENCE_EB_PLANO" Association="EasyBarModel.Store.FK_EB_CONTA_REFERENCE_EB_PLANO">
+      <End Role="EB_PlanoContas" EntitySet="EB_PlanoContas" />
+      <End Role="EB_Contas" EntitySet="EB_Contas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_CONTA_REFERENCE_EB_TIPOL" Association="EasyBarModel.Store.FK_EB_CONTA_REFERENCE_EB_TIPOL">
+      <End Role="EB_TipoLancto" EntitySet="EB_TipoLancto" />
+      <End Role="EB_Contas" EntitySet="EB_Contas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_Contas_fk" Association="EasyBarModel.Store.FK_EB_Contas_fk">
+      <End Role="EB_Fornecedor" EntitySet="EB_Fornecedor" />
+      <End Role="EB_Contas" EntitySet="EB_Contas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_Contas_fk2" Association="EasyBarModel.Store.FK_EB_Contas_fk2">
+      <End Role="EB_ContasDestDesconto" EntitySet="EB_ContasDestDesconto" />
+      <End Role="EB_Contas" EntitySet="EB_Contas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_Contas_fk4" Association="EasyBarModel.Store.FK_EB_Contas_fk4">
+      <End Role="EB_ContaCorrente" EntitySet="EB_ContaCorrente" />
+      <End Role="EB_Contas" EntitySet="EB_Contas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_Endereco_fk" Association="EasyBarModel.Store.FK_EB_Endereco_fk">
+      <End Role="EB_Cliente" EntitySet="EB_Cliente" />
+      <End Role="EB_Endereco" EntitySet="EB_Endereco" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_EstoqueLancto_fk" Association="EasyBarModel.Store.FK_EB_EstoqueLancto_fk">
+      <End Role="EB_TipoLancto" EntitySet="EB_TipoLancto" />
+      <End Role="EB_EstoqueLancto" EntitySet="EB_EstoqueLancto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_EstoqueLancto_fk2" Association="EasyBarModel.Store.FK_EB_EstoqueLancto_fk2">
+      <End Role="EB_Fornecedor" EntitySet="EB_Fornecedor" />
+      <End Role="EB_EstoqueLancto" EntitySet="EB_EstoqueLancto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_EstoqueLancto_fk3" Association="EasyBarModel.Store.FK_EB_EstoqueLancto_fk3">
+      <End Role="EB_Usuario" EntitySet="EB_Usuario" />
+      <End Role="EB_EstoqueLancto" EntitySet="EB_EstoqueLancto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_EstoqueLanctoItens_fk" Association="EasyBarModel.Store.FK_EB_EstoqueLanctoItens_fk">
+      <End Role="EB_EstoqueLancto" EntitySet="EB_EstoqueLancto" />
+      <End Role="EB_EstoqueLancItens" EntitySet="EB_EstoqueLancItens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_EstoqueLanctoItens_fk2" Association="EasyBarModel.Store.FK_EB_EstoqueLanctoItens_fk2">
+      <End Role="EB_Produto" EntitySet="EB_Produto" />
+      <End Role="EB_EstoqueLancItens" EntitySet="EB_EstoqueLancItens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_GrupoProduto_fk" Association="EasyBarModel.Store.FK_EB_GrupoProduto_fk">
+      <End Role="EB_GrupoProduto" EntitySet="EB_GrupoProduto" />
+      <End Role="EB_GrupoProduto1" EntitySet="EB_GrupoProduto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_IMPRE_REFERENCE_EB_TIPOP" Association="EasyBarModel.Store.FK_EB_IMPRE_REFERENCE_EB_TIPOP">
+      <End Role="EB_TipoProduto" EntitySet="EB_TipoProduto" />
+      <End Role="EB_Impressoras" EntitySet="EB_Impressoras" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_LANCA_REFERENCE_EB_BALCA" Association="EasyBarModel.Store.FK_EB_LANCA_REFERENCE_EB_BALCA">
+      <End Role="EB_Balcao" EntitySet="EB_Balcao" />
+      <End Role="EB_Lancamento" EntitySet="EB_Lancamento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_LANCA_REFERENCE_EB_CLIEN" Association="EasyBarModel.Store.FK_EB_LANCA_REFERENCE_EB_CLIEN">
+      <End Role="EB_Cliente" EntitySet="EB_Cliente" />
+      <End Role="EB_Lancamento" EntitySet="EB_Lancamento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_LANCA_REFERENCE_EB_FORMA" Association="EasyBarModel.Store.FK_EB_LANCA_REFERENCE_EB_FORMA">
+      <End Role="EB_FormaPagamento" EntitySet="EB_FormaPagamento" />
+      <End Role="EB_LancamentoFechamentoFormasPag" EntitySet="EB_LancamentoFechamentoFormasPag" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_LANCA_REFERENCE_EB_LANCA" Association="EasyBarModel.Store.FK_EB_LANCA_REFERENCE_EB_LANCA">
+      <End Role="EB_LancamentoStatus" EntitySet="EB_LancamentoStatus" />
+      <End Role="EB_Lancamento" EntitySet="EB_Lancamento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_LANCA_REFERENCE_EB_LANCA_FECHA" Association="EasyBarModel.Store.FK_EB_LANCA_REFERENCE_EB_LANCA_FECHA">
+      <End Role="EB_Lancamento" EntitySet="EB_Lancamento" />
+      <End Role="EB_LancamentoFechamentoFormasPag" EntitySet="EB_LancamentoFechamentoFormasPag" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_LancamentoAdiantamentos_fk" Association="EasyBarModel.Store.FK_EB_LancamentoAdiantamentos_fk">
+      <End Role="EB_Lancamento" EntitySet="EB_Lancamento" />
+      <End Role="EB_LancamentoAdiantamentos" EntitySet="EB_LancamentoAdiantamentos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_LancamentoAdiantamentos_fk2" Association="EasyBarModel.Store.FK_EB_LancamentoAdiantamentos_fk2">
+      <End Role="EB_FormaPagamento" EntitySet="EB_FormaPagamento" />
+      <End Role="EB_LancamentoAdiantamentos" EntitySet="EB_LancamentoAdiantamentos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_LanctoPedidos_fk" Association="EasyBarModel.Store.FK_EB_LanctoPedidos_fk">
+      <End Role="EB_Cliente" EntitySet="EB_Cliente" />
+      <End Role="EB_LanctoPedidos" EntitySet="EB_LanctoPedidos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_LanctoPedidos_fk2" Association="EasyBarModel.Store.FK_EB_LanctoPedidos_fk2">
+      <End Role="EB_Endereco" EntitySet="EB_Endereco" />
+      <End Role="EB_LanctoPedidos" EntitySet="EB_LanctoPedidos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_LanctoPedidos_fk3" Association="EasyBarModel.Store.FK_EB_LanctoPedidos_fk3">
+      <End Role="EB_Lancamento" EntitySet="EB_Lancamento" />
+      <End Role="EB_LanctoPedidos" EntitySet="EB_LanctoPedidos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_PlanoContas_fk" Association="EasyBarModel.Store.FK_EB_PlanoContas_fk">
+      <End Role="EB_TipoLancto" EntitySet="EB_TipoLancto" />
+      <End Role="EB_PlanoContas" EntitySet="EB_PlanoContas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_PlanoContas_fk2" Association="EasyBarModel.Store.FK_EB_PlanoContas_fk2">
+      <End Role="EB_PlanoContas" EntitySet="EB_PlanoContas" />
+      <End Role="EB_PlanoContas1" EntitySet="EB_PlanoContas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_PRODU_REFERENCE_EB_PRODU" Association="EasyBarModel.Store.FK_EB_PRODU_REFERENCE_EB_PRODU">
+      <End Role="EB_Produto" EntitySet="EB_Produto" />
+      <End Role="EB_ProdutoComp" EntitySet="EB_ProdutoComp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EB_ProdutoComp_fk" Association="EasyBarModel.Store.FK_EB_ProdutoComp_fk">
+      <End Role="EB_Produto" EntitySet="EB_Produto" />
+      <End Role="EB_ProdutoComp" EntitySet="EB_ProdutoComp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EN_LancamentoCaixaBanco_fk" Association="EasyBarModel.Store.FK_EN_LancamentoCaixaBanco_fk">
+      <End Role="EB_TipoLancto" EntitySet="EB_TipoLancto" />
+      <End Role="EB_LancamentoCaixaBanco" EntitySet="EB_LancamentoCaixaBanco" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EN_LancamentoCaixaBanco_fk2" Association="EasyBarModel.Store.FK_EN_LancamentoCaixaBanco_fk2">
+      <End Role="EB_FormaPagamento" EntitySet="EB_FormaPagamento" />
+      <End Role="EB_LancamentoCaixaBanco" EntitySet="EB_LancamentoCaixaBanco" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EN_LancamentoCaixaBanco_fk3" Association="EasyBarModel.Store.FK_EN_LancamentoCaixaBanco_fk3">
+      <End Role="EB_ContasDestDesconto" EntitySet="EB_ContasDestDesconto" />
+      <End Role="EB_LancamentoCaixaBanco" EntitySet="EB_LancamentoCaixaBanco" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="EB_Bairro">
+    <Key>
+      <PropertyRef Name="BairroID" />
+    </Key>
+    <Property Name="BairroID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="CidadeID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="dsNome" Type="varchar" Nullable="false" MaxLength="120" />
+    <Property Name="nrTaxaEntrega" Type="decimal" Nullable="false" Precision="13" Scale="2" />
+  </EntityType>
+  <EntityType Name="EB_Balcao">
+    <Key>
+      <PropertyRef Name="BalcaoID" />
+    </Key>
+    <Property Name="BalcaoID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="dsBalcao" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="EB_CadastroMesa">
+    <Key>
+      <PropertyRef Name="MesaID" />
+    </Key>
+    <Property Name="MesaID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="dsMesa" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="EB_Caixa">
+    <Key>
+      <PropertyRef Name="CaixaID" />
+    </Key>
+    <Property Name="CaixaID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="dtCaixa" Type="datetime" Nullable="false" />
+    <Property Name="dtCaixaFechamento" Type="datetime" />
+    <Property Name="vlCaixa" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="vlnaAberturaCaixa" Type="decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="dsStatus" Type="char" Nullable="false" MaxLength="18" />
+    <Property Name="fechamentoSaldoComputado" Type="decimal" Precision="11" Scale="2" />
+    <Property Name="fechamentoTotalFisicoCaixa" Type="decimal" Precision="11" Scale="2" />
+    <Property Name="fechamentoFundoCaixaDiaPosterior" Type="decimal" Precision="11" Scale="2" />
+    <Property Name="fechamentoDiferenca" Type="decimal" Precision="11" Scale="2" />
+    <Property Name="UsuarioIDFechamento" Type="decimal" Precision="11" />
+    <Property Name="UsuarioIDAbertura" Type="decimal" Precision="11" />
+  </EntityType>
+  <EntityType Name="EB_CaixaHistoricoFechamento">
+    <Key>
+      <PropertyRef Name="HistoricoID" />
+    </Key>
+    <Property Name="HistoricoID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="UsuarioID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="CaixaID" Type="decimal" Precision="11" />
+    <Property Name="fechamentoSaldoComputado" Type="decimal" Precision="11" Scale="2" />
+    <Property Name="fechamentoTotalFisicoCaixa" Type="decimal" Precision="11" Scale="2" />
+    <Property Name="fechamentoFundoCaixaDiaPosterior" Type="decimal" Precision="11" Scale="2" />
+    <Property Name="fechamentoDiferenca" Type="decimal" Precision="11" Scale="2" />
+    <Property Name="dtCaixaFechamento" Type="datetime" />
+  </EntityType>
+  <EntityType Name="EB_Cidade">
+    <Key>
+      <PropertyRef Name="CidadeID" />
+    </Key>
+    <Property Name="CidadeID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="EstadoID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="dsNome" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="EB_Cliente">
+    <Key>
+      <PropertyRef Name="ClienteID" />
+    </Key>
+    <Property Name="ClienteID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="EnderecoID" Type="decimal" Precision="11" />
+    <Property Name="ContatoID" Type="decimal" Precision="11" />
+    <Property Name="UsuarioID" Type="decimal" Precision="11" />
+    <Property Name="dsNome" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="dtNascimento" Type="datetime" />
+    <Property Name="nrCpfCpnj" Type="varchar" MaxLength="11" />
+    <Property Name="dsEmail" Type="varchar" MaxLength="150" />
+    <Property Name="dtCadastro" Type="datetime" Nullable="false" />
+    <Property Name="nrStatus" Type="decimal" />
+    <Property Name="convenio" Type="bit" />
+    <Property Name="flExcluido" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EB_ClienteOcorrencias">
+    <Key>
+      <PropertyRef Name="OcorrenciaID" />
+    </Key>
+    <Property Name="OcorrenciaID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="ClienteID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="dsOcorrencia" Type="varchar(max)" Nullable="false" />
+    <Property Name="dtOcorrencia" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EB_ConfiguracoesSistema">
+    <Key>
+      <PropertyRef Name="ConfID" />
+    </Key>
+    <Property Name="ConfID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="impressaoCabecalho" Type="varchar(max)" />
+    <Property Name="impressaoRodape" Type="varchar(max)" />
+    <Property Name="flTaxaServicoAtiva" Type="bit" />
+    <Property Name="ServidorIP" Type="varchar" MaxLength="20" />
+    <Property Name="ServidorPorta" Type="int" />
+  </EntityType>
+  <EntityType Name="EB_ContaCorrente">
+    <Key>
+      <PropertyRef Name="ContaID" />
+    </Key>
+    <Property Name="ContaID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="dsDescricao" Type="varchar" MaxLength="100" />
+    <Property Name="nrContaNumero" Type="decimal" Precision="20" />
+    <Property Name="dtReferencia" Type="datetime" />
+    <Property Name="mnSaldoInicial" Type="decimal" Precision="11" Scale="3" />
+    <Property Name="mnLimite" Type="decimal" Precision="11" Scale="3" />
+    <Property Name="dsAgencia" Type="varchar" MaxLength="100" />
+    <Property Name="dsNomeGerente" Type="varchar" MaxLength="100" />
+    <Property Name="nrTelefone" Type="varchar" MaxLength="100" />
+    <Property Name="dtCadastro" Type="datetime" />
+  </EntityType>
+  <EntityType Name="EB_ContaLancto">
+    <Key>
+      <PropertyRef Name="LanctoID" />
+    </Key>
+    <Property Name="LanctoID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="ContaID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="TipoLanctoID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="nrValor" Type="float" />
+    <Property Name="dsObservacao" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="EB_Contas">
+    <Key>
+      <PropertyRef Name="contasID" />
+    </Key>
+    <Property Name="contasID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="pai" Type="decimal" Precision="11" />
+    <Property Name="lanctoID" Type="decimal" Precision="11" />
+    <Property Name="clienteID" Type="decimal" Precision="11" />
+    <Property Name="FornecedorID" Type="decimal" Precision="11" />
+    <Property Name="FormaPagamentoID" Type="decimal" Precision="11" />
+    <Property Name="PlanoContaID" Type="decimal" Precision="11" />
+    <Property Name="TipoLanctoID" Type="decimal" Precision="11" />
+    <Property Name="usuarioID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="dtlancto" Type="datetime" />
+    <Property Name="descricao" Type="varchar(max)" />
+    <Property Name="vlConta" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="dtVencimento" Type="datetime" />
+    <Property Name="observacoes" Type="varchar(max)" />
+    <Property Name="dtPagamentoOuRecebimento" Type="datetime" />
+    <Property Name="fechaValorPago" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="DestDescontoID" Type="decimal" Precision="11" />
+    <Property Name="DestOuOrigDescontoContaCorrenteID" Type="decimal" Precision="11" />
+    <Property Name="flBaixada" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EB_ContasDestDesconto">
+    <Key>
+      <PropertyRef Name="DestDescontoID" />
+    </Key>
+    <Property Name="DestDescontoID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="dsDestinoDesconto" Type="varchar" Nullable="false" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="EB_ContaTipoLancto">
+    <Key>
+      <PropertyRef Name="TipoLanctoID" />
+    </Key>
+    <Property Name="TipoLanctoID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="dsTipoLancto" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="EB_Contato">
+    <Key>
+      <PropertyRef Name="ContatoID" />
+    </Key>
+    <Property Name="ContatoID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="nrTelefone1" Type="varchar" MaxLength="30" />
+    <Property Name="nrTelefone2" Type="varchar" MaxLength="30" />
+    <Property Name="nrTelefone3" Type="varchar" MaxLength="30" />
+    <Property Name="nrTelefone4" Type="varchar" MaxLength="30" />
+    <Property Name="nrCelular" Type="varchar" MaxLength="30" />
+    <Property Name="dsNomeContato" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="EB_Empresa">
+    <Key>
+      <PropertyRef Name="EmpresaID" />
+    </Key>
+    <Property Name="EmpresaID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="dsNomeFantasia" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="dsRazaoSocial" Type="varchar" MaxLength="100" />
+    <Property Name="nrCnpj" Type="varchar" MaxLength="100" />
+    <Property Name="tel1" Type="varchar" MaxLength="30" />
+    <Property Name="tel2" Type="varchar" MaxLength="30" />
+    <Property Name="cel" Type="varchar" MaxLength="30" />
+    <Property Name="dsEmail" Type="varchar" MaxLength="100" />
+    <Property Name="dsEndereco" Type="varchar" MaxLength="200" />
+    <Property Name="dsBairro" Type="varchar" MaxLength="150" />
+    <Property Name="DsCidade" Type="varchar" MaxLength="150" />
+    <Property Name="siglaUF" Type="varchar" MaxLength="2" />
+    <Property Name="inscEstadual" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="EB_Endereco">
+    <Key>
+      <PropertyRef Name="EnderecoID" />
+    </Key>
+    <Property Name="EnderecoID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="CidadeID" Type="decimal" Precision="11" />
+    <Property Name="BairroID" Type="decimal" Precision="11" />
+    <Property Name="ClienteID" Type="decimal" Precision="11" />
+    <Property Name="dsLogradouro" Type="varchar" MaxLength="100" />
+    <Property Name="dsComplemento" Type="varchar" MaxLength="100" />
+    <Property Name="nrNumero" Type="int" />
+    <Property Name="nrCEP" Type="varchar" MaxLength="9" />
+    <Property Name="dsRegiao" Type="varchar(max)" />
+    <Property Name="dsReferencias" Type="varchar(max)" />
+    <Property Name="flEnderecoPrincipal" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EB_Entregador">
+    <Key>
+      <PropertyRef Name="EntregadorID" />
+    </Key>
+    <Property Name="EntregadorID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="dsNome" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="dsEndereco" Type="varchar" MaxLength="100" />
+    <Property Name="nrTelefoneFixo" Type="char" MaxLength="18" />
+    <Property Name="nrTelefoneCelular" Type="char" MaxLength="18" />
+    <Property Name="dtCadastro" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EB_Estado">
+    <Key>
+      <PropertyRef Name="EstadoID" />
+    </Key>
+    <Property Name="EstadoID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="dsNome" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="dsSigla" Type="char" Nullable="false" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="EB_EstoqueLancItens">
+    <Key>
+      <PropertyRef Name="EstoqueLanctoItemID" />
+    </Key>
+    <Property Name="EstoqueLanctoItemID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="EstoqueLanctoID" Type="decimal" Precision="11" />
+    <Property Name="ProdutoID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="nrQuantidade" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="nrPrCusto" Type="decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="vlTotal" Type="decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="dtLancto" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EB_EstoqueLancto">
+    <Key>
+      <PropertyRef Name="EstoqueLanctoID" />
+    </Key>
+    <Property Name="EstoqueLanctoID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="TipoMovID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="UsuarioID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="FornecedorID" Type="decimal" Precision="11" />
+    <Property Name="nrNota" Type="varchar" MaxLength="200" />
+    <Property Name="dtLancto" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EB_FormaPagamento">
+    <Key>
+      <PropertyRef Name="FormaPagamentoID" />
+    </Key>
+    <Property Name="FormaPagamentoID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="CondicaoID" Type="decimal" Precision="11" />
+    <Property Name="dsForma" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="ordem" Type="int" />
+    <Property Name="flMostrarnoContas" Type="bit" />
+    <Property Name="dtCadastro" Type="datetime" />
+    <Property Name="Flexcluido" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EB_FormaPagamentoCondicao">
+    <Key>
+      <PropertyRef Name="CondicaoID" />
+    </Key>
+    <Property Name="CondicaoID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="dsCondicaoPagamento" Type="varchar" Nullable="false" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="EB_Fornecedor">
+    <Key>
+      <PropertyRef Name="FornecedorID" />
+    </Key>
+    <Property Name="FornecedorID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="dsNomeFantasia" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="dsRazaoSocial" Type="varchar" MaxLength="100" />
+    <Property Name="nrCNPJ" Type="decimal" Precision="11" />
+    <Property Name="nrInsEstadual" Type="decimal" Precision="11" />
+    <Property Name="nrTelefone" Type="varchar" MaxLength="14" />
+    <Property Name="nrFax" Type="varchar" MaxLength="14" />
+    <Property Name="nrCelular" Type="varchar" MaxLength="14" />
+    <Property Name="nrNomeContato" Type="varchar" MaxLength="100" />
+    <Property Name="dsLogradouro" Type="varchar" MaxLength="120" />
+    <Property Name="dsCidade" Type="varchar" MaxLength="120" />
+    <Property Name="dsUfEstado" Type="varchar" MaxLength="2" />
+    <Property Name="nrCEP" Type="varchar" MaxLength="10" />
+    <Property Name="dsEmail" Type="varchar" MaxLength="100" />
+    <Property Name="dsSite" Type="varchar" MaxLength="100" />
+    <Property Name="dsObservacao" Type="varchar(max)" />
+    <Property Name="dtCadastro" Type="datetime" />
+  </EntityType>
+  <EntityType Name="EB_Garcon">
+    <Key>
+      <PropertyRef Name="GarconID" />
+    </Key>
+    <Property Name="GarconID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="dsNome" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="dsEndereco" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="nrTelefone" Type="varchar" MaxLength="100" />
+    <Property Name="nrCelular" Type="varchar" MaxLength="100" />
+    <Property Name="nrComissao" Type="float" Nullable="false" />
+    <Property Name="dtCadastro" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EB_GrupoProduto">
+    <Key>
+      <PropertyRef Name="GrupoID" />
+    </Key>
+    <Property Name="GrupoID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="dsGrupo" Type="varchar" MaxLength="100" />
+    <Property Name="pai" Type="decimal" Precision="11" />
+    <Property Name="flExcluido" Type="bit" />
+  </EntityType>
+  <EntityType Name="EB_Impressoras">
+    <Key>
+      <PropertyRef Name="ImpressoraID" />
+    </Key>
+    <Property Name="ImpressoraID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="TipoProdutoID" Type="decimal" Precision="11" />
+    <Property Name="dsImpressora" Type="varchar" Nullable="false" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="EB_Lancamento">
+    <Key>
+      <PropertyRef Name="LanctoID" />
+    </Key>
+    <Property Name="LanctoID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="CaixaID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="MesaID" Type="decimal" Precision="11" />
+    <Property Name="TipoVendaID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="TipoLanctoID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="GarconID" Type="decimal" Precision="11" />
+    <Property Name="BalcaoID" Type="decimal" Precision="11" />
+    <Property Name="EntregadorID" Type="decimal" Precision="11" />
+    <Property Name="UsuarioID" Type="decimal" Precision="11" />
+    <Property Name="StatusID" Type="decimal" Precision="11" />
+    <Property Name="ClienteID" Type="decimal" Precision="11" />
+    <Property Name="nrOcupantes" Type="decimal" Precision="11" />
+    <Property Name="dtLancto" Type="datetime" />
+    <Property Name="dtFimLancto" Type="datetime" />
+    <Property Name="dsNomeClienteBalcao" Type="varchar" MaxLength="200" />
+    <Property Name="dsObservacao" Type="varchar(max)" />
+    <Property Name="FechaTotalConsumo" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="FechaAcrescimo" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="FechaDescontos" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="FechaAdiantamento" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="FechaTotalPago" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="FechaTroco" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="FechaCouver" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="FechaTotalVendaFinalizada" Type="decimal" Precision="11" Scale="2" />
+    <Property Name="flVendaCancelada" Type="bit" Nullable="false" />
+    <Property Name="flComissaoGarconFoiPaga" Type="bit" />
+  </EntityType>
+  <EntityType Name="EB_LancamentoAdiantamentos">
+    <Key>
+      <PropertyRef Name="AdiantamentoID" />
+    </Key>
+    <Property Name="AdiantamentoID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="LanctoID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="FormaPagamentoID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="vlTotalAPagarContaNoMomento" Type="decimal" Nullable="false" Precision="13" Scale="2" />
+    <Property Name="vlPagamentoCliente" Type="decimal" Nullable="false" Precision="13" Scale="2" />
+    <Property Name="vlRecebidoCliente" Type="decimal" Nullable="false" Precision="13" Scale="2" />
+    <Property Name="vlTroco" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="dsObservacao" Type="varchar(max)" />
+    <Property Name="dtDataHora" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EB_LancamentoCaixaBanco">
+    <Key>
+      <PropertyRef Name="LanctoCaixaBancoID" />
+    </Key>
+    <Property Name="LanctoCaixaBancoID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="TipoLanctoID" Type="decimal" Precision="11" />
+    <Property Name="formaPagamentoID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="ContasDestDescontoID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="dsDescricao" Type="varchar(max)" Nullable="false" />
+    <Property Name="dtLancto" Type="datetime" Nullable="false" />
+    <Property Name="vlValor" Type="decimal" Nullable="false" Precision="11" Scale="2" />
+    <Property Name="dtInsercao" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EB_LancamentoFechamentoFormasPag">
+    <Key>
+      <PropertyRef Name="fechamentoID" />
+    </Key>
+    <Property Name="fechamentoID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="LanctoID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="FormaPagamentoID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="vlForma" Type="decimal" Nullable="false" Precision="13" Scale="2" />
+    <Property Name="FlOrigemAdiantamento" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EB_LancamentoItens">
+    <Key>
+      <PropertyRef Name="LanctoItemID" />
+    </Key>
+    <Property Name="LanctoItemID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="PaiID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="LanctoID" Type="decimal" Precision="11" />
+    <Property Name="ProdutoID" Type="decimal" Precision="11" />
+    <Property Name="Quantidade" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="nrPrecoVenda" Type="decimal" Nullable="false" Precision="13" Scale="2" />
+    <Property Name="Total" Type="decimal" Nullable="false" Precision="13" Scale="2" />
+    <Property Name="dsObservacao" Type="varchar(max)" />
+    <Property Name="dtDataHora" Type="datetime" />
+    <Property Name="flParaViagem" Type="bit" Nullable="false" />
+    <Property Name="flFoiImpresso" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EB_LancamentoStatus">
+    <Key>
+      <PropertyRef Name="StatusID" />
+    </Key>
+    <Property Name="StatusID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="dsStatus" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="EB_LanctoPedidos">
+    <Key>
+      <PropertyRef Name="PedidoID" />
+    </Key>
+    <Property Name="PedidoID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="ClienteID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="EnderecoID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="LanctoID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="flRecebido" Type="bit" Nullable="false" />
+    <Property Name="flPagoAoEntregador" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EB_OrigemProduto">
+    <Key>
+      <PropertyRef Name="OrigemID" />
+    </Key>
+    <Property Name="OrigemID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="dsOrigem" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="dsImpressora" Type="varchar" MaxLength="200" />
+    <Property Name="flMostrar" Type="bit" Nullable="false" />
+    <Property Name="impressaoObrigatoria" Type="bit" Nullable="false" />
+    <Property Name="impressoraPedidos" Type="bit" Nullable="false" />
+    <Property Name="tamanhoPapelImpressoraMilimetros" Type="decimal" Precision="11" />
+    <Property Name="flPossuiAcentuacao" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EB_PlanoContas">
+    <Key>
+      <PropertyRef Name="PlanoContaID" />
+    </Key>
+    <Property Name="PlanoContaID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="TipoLanctoID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="Pai" Type="decimal" Precision="11" />
+    <Property Name="dsPlanoConta" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="flPadraoSaida" Type="bit" />
+  </EntityType>
+  <EntityType Name="EB_Produto">
+    <Key>
+      <PropertyRef Name="ProdutoID" />
+    </Key>
+    <Property Name="ProdutoID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="nrCodigoBarras" Type="decimal" Precision="20" />
+    <Property Name="OrigemID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="GrupoID" Type="decimal" Precision="11" />
+    <Property Name="FornecedorID" Type="decimal" Precision="11" />
+    <Property Name="TipoProdutoID" Type="decimal" Precision="11" />
+    <Property Name="dsProduto" Type="varchar" Nullable="false" MaxLength="120" />
+    <Property Name="nrUnidade" Type="int" Nullable="false" />
+    <Property Name="nrPrecoCusto" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="nrPrecoVenda" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="nrEstoqueMin" Type="decimal" Precision="11" />
+    <Property Name="nrEstoqueMax" Type="decimal" Precision="11" />
+    <Property Name="nrEstoqueAtual" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="dtCadastro" Type="datetime" />
+    <Property Name="flExcluido" Type="bit" />
+  </EntityType>
+  <EntityType Name="EB_ProdutoComp">
+    <Key>
+      <PropertyRef Name="ProdutoCompID" />
+    </Key>
+    <Property Name="ProdutoCompID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="ProdutoPrincipalID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="ProdutoID" Type="decimal" Precision="11" />
+    <Property Name="Quantidade" Type="decimal" Precision="11" />
+  </EntityType>
+  <EntityType Name="EB_TipoLancto">
+    <Key>
+      <PropertyRef Name="TipoLanctoID" />
+    </Key>
+    <Property Name="TipoLanctoID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="dsTipoLancto" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="EB_TipoProduto">
+    <Key>
+      <PropertyRef Name="TipoProdutoID" />
+    </Key>
+    <Property Name="TipoProdutoID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="dsTipoProduto" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="EB_TipoVenda">
+    <Key>
+      <PropertyRef Name="TipoVendaID" />
+    </Key>
+    <Property Name="TipoVendaID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="dsTipoVenda" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="dtCadastro" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EB_Usuario">
+    <Key>
+      <PropertyRef Name="UsuarioID" />
+    </Key>
+    <Property Name="UsuarioID" Type="decimal" Nullable="false" Precision="11" StoreGeneratedPattern="Identity" />
+    <Property Name="EmpresaID" Type="decimal" Nullable="false" Precision="11" />
+    <Property Name="dsNome" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="dsLogin" Type="varchar" MaxLength="100" />
+    <Property Name="dsSenha" Type="varchar" MaxLength="100" />
+    <Property Name="nrStatus" Type="decimal" Nullable="false" Precision="1" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="EB_Caixa_fk">
+    <End Role="EB_Usuario" Type="EasyBarModel.Store.EB_Usuario" Multiplicity="0..1" />
+    <End Role="EB_Caixa" Type="EasyBarModel.Store.EB_Caixa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Usuario">
+        <PropertyRef Name="UsuarioID" />
+      </Principal>
+      <Dependent Role="EB_Caixa">
+        <PropertyRef Name="UsuarioIDFechamento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EB_Caixa_fk2">
+    <End Role="EB_Usuario" Type="EasyBarModel.Store.EB_Usuario" Multiplicity="0..1" />
+    <End Role="EB_Caixa" Type="EasyBarModel.Store.EB_Caixa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Usuario">
+        <PropertyRef Name="UsuarioID" />
+      </Principal>
+      <Dependent Role="EB_Caixa">
+        <PropertyRef Name="UsuarioIDAbertura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EB_FormaPagamento_fk">
+    <End Role="EB_FormaPagamentoCondicao" Type="EasyBarModel.Store.EB_FormaPagamentoCondicao" Multiplicity="0..1" />
+    <End Role="EB_FormaPagamento" Type="EasyBarModel.Store.EB_FormaPagamento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_FormaPagamentoCondicao">
+        <PropertyRef Name="CondicaoID" />
+      </Principal>
+      <Dependent Role="EB_FormaPagamento">
+        <PropertyRef Name="CondicaoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EB_Bairro__Cidad__34BEB830">
+    <End Role="EB_Cidade" Type="EasyBarModel.Store.EB_Cidade" Multiplicity="1" />
+    <End Role="EB_Bairro" Type="EasyBarModel.Store.EB_Bairro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Cidade">
+        <PropertyRef Name="CidadeID" />
+      </Principal>
+      <Dependent Role="EB_Bairro">
+        <PropertyRef Name="CidadeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EB_Cidade__Estad__2FFA0313">
+    <End Role="EB_Estado" Type="EasyBarModel.Store.EB_Estado" Multiplicity="1" />
+    <End Role="EB_Cidade" Type="EasyBarModel.Store.EB_Cidade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Estado">
+        <PropertyRef Name="EstadoID" />
+      </Principal>
+      <Dependent Role="EB_Cidade">
+        <PropertyRef Name="EstadoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EB_Client__Clien__45E94432">
+    <End Role="EB_Cliente" Type="EasyBarModel.Store.EB_Cliente" Multiplicity="1" />
+    <End Role="EB_ClienteOcorrencias" Type="EasyBarModel.Store.EB_ClienteOcorrencias" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Cliente">
+        <PropertyRef Name="ClienteID" />
+      </Principal>
+      <Dependent Role="EB_ClienteOcorrencias">
+        <PropertyRef Name="ClienteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EB_Client__Conta__6DAD1CC9">
+    <End Role="EB_Contato" Type="EasyBarModel.Store.EB_Contato" Multiplicity="0..1" />
+    <End Role="EB_Cliente" Type="EasyBarModel.Store.EB_Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Contato">
+        <PropertyRef Name="ContatoID" />
+      </Principal>
+      <Dependent Role="EB_Cliente">
+        <PropertyRef Name="ContatoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EB_Client__Ender__13D2C5B1">
+    <End Role="EB_Endereco" Type="EasyBarModel.Store.EB_Endereco" Multiplicity="0..1" />
+    <End Role="EB_Cliente" Type="EasyBarModel.Store.EB_Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Endereco">
+        <PropertyRef Name="EnderecoID" />
+      </Principal>
+      <Dependent Role="EB_Cliente">
+        <PropertyRef Name="EnderecoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EB_Client__Usuar__3F3C46A3">
+    <End Role="EB_Usuario" Type="EasyBarModel.Store.EB_Usuario" Multiplicity="0..1" />
+    <End Role="EB_Cliente" Type="EasyBarModel.Store.EB_Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Usuario">
+        <PropertyRef Name="UsuarioID" />
+      </Principal>
+      <Dependent Role="EB_Cliente">
+        <PropertyRef Name="UsuarioID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EB_ContaL__Conta__480696CE">
+    <End Role="EB_ContaCorrente" Type="EasyBarModel.Store.EB_ContaCorrente" Multiplicity="1" />
+    <End Role="EB_ContaLancto" Type="EasyBarModel.Store.EB_ContaLancto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_ContaCorrente">
+        <PropertyRef Name="ContaID" />
+      </Principal>
+      <Dependent Role="EB_ContaLancto">
+        <PropertyRef Name="ContaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EB_ContaL__TipoL__48FABB07">
+    <End Role="EB_ContaTipoLancto" Type="EasyBarModel.Store.EB_ContaTipoLancto" Multiplicity="1" />
+    <End Role="EB_ContaLancto" Type="EasyBarModel.Store.EB_ContaLancto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_ContaTipoLancto">
+        <PropertyRef Name="TipoLanctoID" />
+      </Principal>
+      <Dependent Role="EB_ContaLancto">
+        <PropertyRef Name="TipoLanctoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EB_Endere__Bairr__3A779186">
+    <End Role="EB_Bairro" Type="EasyBarModel.Store.EB_Bairro" Multiplicity="0..1" />
+    <End Role="EB_Endereco" Type="EasyBarModel.Store.EB_Endereco" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Bairro">
+        <PropertyRef Name="BairroID" />
+      </Principal>
+      <Dependent Role="EB_Endereco">
+        <PropertyRef Name="BairroID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EB_Endere__Cidad__39836D4D">
+    <End Role="EB_Cidade" Type="EasyBarModel.Store.EB_Cidade" Multiplicity="0..1" />
+    <End Role="EB_Endereco" Type="EasyBarModel.Store.EB_Endereco" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Cidade">
+        <PropertyRef Name="CidadeID" />
+      </Principal>
+      <Dependent Role="EB_Endereco">
+        <PropertyRef Name="CidadeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EB_Lancam__Caixa__5224328E">
+    <End Role="EB_Caixa" Type="EasyBarModel.Store.EB_Caixa" Multiplicity="1" />
+    <End Role="EB_Lancamento" Type="EasyBarModel.Store.EB_Lancamento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Caixa">
+        <PropertyRef Name="CaixaID" />
+      </Principal>
+      <Dependent Role="EB_Lancamento">
+        <PropertyRef Name="CaixaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EB_Lancam__Entre__1CE72E9F">
+    <End Role="EB_Entregador" Type="EasyBarModel.Store.EB_Entregador" Multiplicity="0..1" />
+    <End Role="EB_Lancamento" Type="EasyBarModel.Store.EB_Lancamento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Entregador">
+        <PropertyRef Name="EntregadorID" />
+      </Principal>
+      <Dependent Role="EB_Lancamento">
+        <PropertyRef Name="EntregadorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EB_Lancam__Garco__19169DBB">
+    <End Role="EB_Garcon" Type="EasyBarModel.Store.EB_Garcon" Multiplicity="0..1" />
+    <End Role="EB_Lancamento" Type="EasyBarModel.Store.EB_Lancamento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Garcon">
+        <PropertyRef Name="GarconID" />
+      </Principal>
+      <Dependent Role="EB_Lancamento">
+        <PropertyRef Name="GarconID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EB_Lancam__Lanct__5E8A0973">
+    <End Role="EB_Lancamento" Type="EasyBarModel.Store.EB_Lancamento" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EB_LancamentoItens" Type="EasyBarModel.Store.EB_LancamentoItens" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Lancamento">
+        <PropertyRef Name="LanctoID" />
+      </Principal>
+      <Dependent Role="EB_LancamentoItens">
+        <PropertyRef Name="LanctoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EB_Lancam__MesaI__163A3110">
+    <End Role="EB_CadastroMesa" Type="EasyBarModel.Store.EB_CadastroMesa" Multiplicity="0..1" />
+    <End Role="EB_Lancamento" Type="EasyBarModel.Store.EB_Lancamento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_CadastroMesa">
+        <PropertyRef Name="MesaID" />
+      </Principal>
+      <Dependent Role="EB_Lancamento">
+        <PropertyRef Name="MesaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EB_Lancam__Produ__34FEAF52">
+    <End Role="EB_Produto" Type="EasyBarModel.Store.EB_Produto" Multiplicity="0..1" />
+    <End Role="EB_LancamentoItens" Type="EasyBarModel.Store.EB_LancamentoItens" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Produto">
+        <PropertyRef Name="ProdutoID" />
+      </Principal>
+      <Dependent Role="EB_LancamentoItens">
+        <PropertyRef Name="ProdutoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EB_Lancam__TipoL__18227982">
+    <End Role="EB_TipoLancto" Type="EasyBarModel.Store.EB_TipoLancto" Multiplicity="1" />
+    <End Role="EB_Lancamento" Type="EasyBarModel.Store.EB_Lancamento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_TipoLancto">
+        <PropertyRef Name="TipoLanctoID" />
+      </Principal>
+      <Dependent Role="EB_Lancamento">
+        <PropertyRef Name="TipoLanctoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EB_Lancam__TipoV__172E5549">
+    <End Role="EB_TipoVenda" Type="EasyBarModel.Store.EB_TipoVenda" Multiplicity="1" />
+    <End Role="EB_Lancamento" Type="EasyBarModel.Store.EB_Lancamento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_TipoVenda">
+        <PropertyRef Name="TipoVendaID" />
+      </Principal>
+      <Dependent Role="EB_Lancamento">
+        <PropertyRef Name="TipoVendaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EB_Lancam__Usuar__1AFEE62D">
+    <End Role="EB_Usuario" Type="EasyBarModel.Store.EB_Usuario" Multiplicity="0..1" />
+    <End Role="EB_Lancamento" Type="EasyBarModel.Store.EB_Lancamento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Usuario">
+        <PropertyRef Name="UsuarioID" />
+      </Principal>
+      <Dependent Role="EB_Lancamento">
+        <PropertyRef Name="UsuarioID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EB_Produt__Forne__5EE9FC26">
+    <End Role="EB_Fornecedor" Type="EasyBarModel.Store.EB_Fornecedor" Multiplicity="0..1" />
+    <End Role="EB_Produto" Type="EasyBarModel.Store.EB_Produto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Fornecedor">
+        <PropertyRef Name="FornecedorID" />
+      </Principal>
+      <Dependent Role="EB_Produto">
+        <PropertyRef Name="FornecedorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EB_Produt__Grupo__5D01B3B4">
+    <End Role="EB_GrupoProduto" Type="EasyBarModel.Store.EB_GrupoProduto" Multiplicity="0..1" />
+    <End Role="EB_Produto" Type="EasyBarModel.Store.EB_Produto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_GrupoProduto">
+        <PropertyRef Name="GrupoID" />
+      </Principal>
+      <Dependent Role="EB_Produto">
+        <PropertyRef Name="GrupoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EB_Produt__Orige__5DF5D7ED">
+    <End Role="EB_OrigemProduto" Type="EasyBarModel.Store.EB_OrigemProduto" Multiplicity="1" />
+    <End Role="EB_Produto" Type="EasyBarModel.Store.EB_Produto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_OrigemProduto">
+        <PropertyRef Name="OrigemID" />
+      </Principal>
+      <Dependent Role="EB_Produto">
+        <PropertyRef Name="OrigemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EB_Produt__TipoP__5FDE205F">
+    <End Role="EB_TipoProduto" Type="EasyBarModel.Store.EB_TipoProduto" Multiplicity="0..1" />
+    <End Role="EB_Produto" Type="EasyBarModel.Store.EB_Produto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_TipoProduto">
+        <PropertyRef Name="TipoProdutoID" />
+      </Principal>
+      <Dependent Role="EB_Produto">
+        <PropertyRef Name="TipoProdutoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_Caixa_fk">
+    <End Role="EB_Usuario" Type="EasyBarModel.Store.EB_Usuario" Multiplicity="0..1" />
+    <End Role="EB_Caixa" Type="EasyBarModel.Store.EB_Caixa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Usuario">
+        <PropertyRef Name="UsuarioID" />
+      </Principal>
+      <Dependent Role="EB_Caixa">
+        <PropertyRef Name="UsuarioIDFechamento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_Caixa_fk2">
+    <End Role="EB_Usuario" Type="EasyBarModel.Store.EB_Usuario" Multiplicity="0..1" />
+    <End Role="EB_Caixa" Type="EasyBarModel.Store.EB_Caixa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Usuario">
+        <PropertyRef Name="UsuarioID" />
+      </Principal>
+      <Dependent Role="EB_Caixa">
+        <PropertyRef Name="UsuarioIDAbertura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_CaixaHistoricoFechamento_fk">
+    <End Role="EB_Usuario" Type="EasyBarModel.Store.EB_Usuario" Multiplicity="1" />
+    <End Role="EB_CaixaHistoricoFechamento" Type="EasyBarModel.Store.EB_CaixaHistoricoFechamento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Usuario">
+        <PropertyRef Name="UsuarioID" />
+      </Principal>
+      <Dependent Role="EB_CaixaHistoricoFechamento">
+        <PropertyRef Name="UsuarioID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_CaixaHistoricoFechamento_fk2">
+    <End Role="EB_Caixa" Type="EasyBarModel.Store.EB_Caixa" Multiplicity="0..1" />
+    <End Role="EB_CaixaHistoricoFechamento" Type="EasyBarModel.Store.EB_CaixaHistoricoFechamento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Caixa">
+        <PropertyRef Name="CaixaID" />
+      </Principal>
+      <Dependent Role="EB_CaixaHistoricoFechamento">
+        <PropertyRef Name="CaixaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_CONTA_REFERENCE_EB_CLIEN">
+    <End Role="EB_Cliente" Type="EasyBarModel.Store.EB_Cliente" Multiplicity="0..1" />
+    <End Role="EB_Contas" Type="EasyBarModel.Store.EB_Contas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Cliente">
+        <PropertyRef Name="ClienteID" />
+      </Principal>
+      <Dependent Role="EB_Contas">
+        <PropertyRef Name="clienteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_CONTA_REFERENCE_EB_FORMA">
+    <End Role="EB_FormaPagamento" Type="EasyBarModel.Store.EB_FormaPagamento" Multiplicity="0..1" />
+    <End Role="EB_Contas" Type="EasyBarModel.Store.EB_Contas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_FormaPagamento">
+        <PropertyRef Name="FormaPagamentoID" />
+      </Principal>
+      <Dependent Role="EB_Contas">
+        <PropertyRef Name="FormaPagamentoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_CONTA_REFERENCE_EB_LANCA">
+    <End Role="EB_Lancamento" Type="EasyBarModel.Store.EB_Lancamento" Multiplicity="0..1" />
+    <End Role="EB_Contas" Type="EasyBarModel.Store.EB_Contas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Lancamento">
+        <PropertyRef Name="LanctoID" />
+      </Principal>
+      <Dependent Role="EB_Contas">
+        <PropertyRef Name="lanctoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_CONTA_REFERENCE_EB_PLANO">
+    <End Role="EB_PlanoContas" Type="EasyBarModel.Store.EB_PlanoContas" Multiplicity="0..1" />
+    <End Role="EB_Contas" Type="EasyBarModel.Store.EB_Contas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_PlanoContas">
+        <PropertyRef Name="PlanoContaID" />
+      </Principal>
+      <Dependent Role="EB_Contas">
+        <PropertyRef Name="PlanoContaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_CONTA_REFERENCE_EB_TIPOL">
+    <End Role="EB_TipoLancto" Type="EasyBarModel.Store.EB_TipoLancto" Multiplicity="0..1" />
+    <End Role="EB_Contas" Type="EasyBarModel.Store.EB_Contas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_TipoLancto">
+        <PropertyRef Name="TipoLanctoID" />
+      </Principal>
+      <Dependent Role="EB_Contas">
+        <PropertyRef Name="TipoLanctoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_Contas_fk">
+    <End Role="EB_Fornecedor" Type="EasyBarModel.Store.EB_Fornecedor" Multiplicity="0..1" />
+    <End Role="EB_Contas" Type="EasyBarModel.Store.EB_Contas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Fornecedor">
+        <PropertyRef Name="FornecedorID" />
+      </Principal>
+      <Dependent Role="EB_Contas">
+        <PropertyRef Name="FornecedorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_Contas_fk2">
+    <End Role="EB_ContasDestDesconto" Type="EasyBarModel.Store.EB_ContasDestDesconto" Multiplicity="0..1" />
+    <End Role="EB_Contas" Type="EasyBarModel.Store.EB_Contas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_ContasDestDesconto">
+        <PropertyRef Name="DestDescontoID" />
+      </Principal>
+      <Dependent Role="EB_Contas">
+        <PropertyRef Name="DestDescontoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_Contas_fk4">
+    <End Role="EB_ContaCorrente" Type="EasyBarModel.Store.EB_ContaCorrente" Multiplicity="0..1" />
+    <End Role="EB_Contas" Type="EasyBarModel.Store.EB_Contas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_ContaCorrente">
+        <PropertyRef Name="ContaID" />
+      </Principal>
+      <Dependent Role="EB_Contas">
+        <PropertyRef Name="DestOuOrigDescontoContaCorrenteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_Endereco_fk">
+    <End Role="EB_Cliente" Type="EasyBarModel.Store.EB_Cliente" Multiplicity="0..1" />
+    <End Role="EB_Endereco" Type="EasyBarModel.Store.EB_Endereco" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Cliente">
+        <PropertyRef Name="ClienteID" />
+      </Principal>
+      <Dependent Role="EB_Endereco">
+        <PropertyRef Name="ClienteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_EstoqueLancto_fk">
+    <End Role="EB_TipoLancto" Type="EasyBarModel.Store.EB_TipoLancto" Multiplicity="1" />
+    <End Role="EB_EstoqueLancto" Type="EasyBarModel.Store.EB_EstoqueLancto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_TipoLancto">
+        <PropertyRef Name="TipoLanctoID" />
+      </Principal>
+      <Dependent Role="EB_EstoqueLancto">
+        <PropertyRef Name="TipoMovID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_EstoqueLancto_fk2">
+    <End Role="EB_Fornecedor" Type="EasyBarModel.Store.EB_Fornecedor" Multiplicity="0..1" />
+    <End Role="EB_EstoqueLancto" Type="EasyBarModel.Store.EB_EstoqueLancto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Fornecedor">
+        <PropertyRef Name="FornecedorID" />
+      </Principal>
+      <Dependent Role="EB_EstoqueLancto">
+        <PropertyRef Name="FornecedorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_EstoqueLancto_fk3">
+    <End Role="EB_Usuario" Type="EasyBarModel.Store.EB_Usuario" Multiplicity="1" />
+    <End Role="EB_EstoqueLancto" Type="EasyBarModel.Store.EB_EstoqueLancto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Usuario">
+        <PropertyRef Name="UsuarioID" />
+      </Principal>
+      <Dependent Role="EB_EstoqueLancto">
+        <PropertyRef Name="UsuarioID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_EstoqueLanctoItens_fk">
+    <End Role="EB_EstoqueLancto" Type="EasyBarModel.Store.EB_EstoqueLancto" Multiplicity="0..1" />
+    <End Role="EB_EstoqueLancItens" Type="EasyBarModel.Store.EB_EstoqueLancItens" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_EstoqueLancto">
+        <PropertyRef Name="EstoqueLanctoID" />
+      </Principal>
+      <Dependent Role="EB_EstoqueLancItens">
+        <PropertyRef Name="EstoqueLanctoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_EstoqueLanctoItens_fk2">
+    <End Role="EB_Produto" Type="EasyBarModel.Store.EB_Produto" Multiplicity="1" />
+    <End Role="EB_EstoqueLancItens" Type="EasyBarModel.Store.EB_EstoqueLancItens" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Produto">
+        <PropertyRef Name="ProdutoID" />
+      </Principal>
+      <Dependent Role="EB_EstoqueLancItens">
+        <PropertyRef Name="ProdutoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_GrupoProduto_fk">
+    <End Role="EB_GrupoProduto" Type="EasyBarModel.Store.EB_GrupoProduto" Multiplicity="0..1" />
+    <End Role="EB_GrupoProduto1" Type="EasyBarModel.Store.EB_GrupoProduto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_GrupoProduto">
+        <PropertyRef Name="GrupoID" />
+      </Principal>
+      <Dependent Role="EB_GrupoProduto1">
+        <PropertyRef Name="pai" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_IMPRE_REFERENCE_EB_TIPOP">
+    <End Role="EB_TipoProduto" Type="EasyBarModel.Store.EB_TipoProduto" Multiplicity="0..1" />
+    <End Role="EB_Impressoras" Type="EasyBarModel.Store.EB_Impressoras" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_TipoProduto">
+        <PropertyRef Name="TipoProdutoID" />
+      </Principal>
+      <Dependent Role="EB_Impressoras">
+        <PropertyRef Name="TipoProdutoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_LANCA_REFERENCE_EB_BALCA">
+    <End Role="EB_Balcao" Type="EasyBarModel.Store.EB_Balcao" Multiplicity="0..1" />
+    <End Role="EB_Lancamento" Type="EasyBarModel.Store.EB_Lancamento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Balcao">
+        <PropertyRef Name="BalcaoID" />
+      </Principal>
+      <Dependent Role="EB_Lancamento">
+        <PropertyRef Name="BalcaoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_LANCA_REFERENCE_EB_CLIEN">
+    <End Role="EB_Cliente" Type="EasyBarModel.Store.EB_Cliente" Multiplicity="0..1" />
+    <End Role="EB_Lancamento" Type="EasyBarModel.Store.EB_Lancamento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Cliente">
+        <PropertyRef Name="ClienteID" />
+      </Principal>
+      <Dependent Role="EB_Lancamento">
+        <PropertyRef Name="ClienteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_LANCA_REFERENCE_EB_FORMA">
+    <End Role="EB_FormaPagamento" Type="EasyBarModel.Store.EB_FormaPagamento" Multiplicity="1" />
+    <End Role="EB_LancamentoFechamentoFormasPag" Type="EasyBarModel.Store.EB_LancamentoFechamentoFormasPag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_FormaPagamento">
+        <PropertyRef Name="FormaPagamentoID" />
+      </Principal>
+      <Dependent Role="EB_LancamentoFechamentoFormasPag">
+        <PropertyRef Name="FormaPagamentoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_LANCA_REFERENCE_EB_LANCA">
+    <End Role="EB_LancamentoStatus" Type="EasyBarModel.Store.EB_LancamentoStatus" Multiplicity="0..1" />
+    <End Role="EB_Lancamento" Type="EasyBarModel.Store.EB_Lancamento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_LancamentoStatus">
+        <PropertyRef Name="StatusID" />
+      </Principal>
+      <Dependent Role="EB_Lancamento">
+        <PropertyRef Name="StatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_LANCA_REFERENCE_EB_LANCA_FECHA">
+    <End Role="EB_Lancamento" Type="EasyBarModel.Store.EB_Lancamento" Multiplicity="1" />
+    <End Role="EB_LancamentoFechamentoFormasPag" Type="EasyBarModel.Store.EB_LancamentoFechamentoFormasPag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Lancamento">
+        <PropertyRef Name="LanctoID" />
+      </Principal>
+      <Dependent Role="EB_LancamentoFechamentoFormasPag">
+        <PropertyRef Name="LanctoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_LancamentoAdiantamentos_fk">
+    <End Role="EB_Lancamento" Type="EasyBarModel.Store.EB_Lancamento" Multiplicity="1" />
+    <End Role="EB_LancamentoAdiantamentos" Type="EasyBarModel.Store.EB_LancamentoAdiantamentos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Lancamento">
+        <PropertyRef Name="LanctoID" />
+      </Principal>
+      <Dependent Role="EB_LancamentoAdiantamentos">
+        <PropertyRef Name="LanctoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_LancamentoAdiantamentos_fk2">
+    <End Role="EB_FormaPagamento" Type="EasyBarModel.Store.EB_FormaPagamento" Multiplicity="1" />
+    <End Role="EB_LancamentoAdiantamentos" Type="EasyBarModel.Store.EB_LancamentoAdiantamentos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_FormaPagamento">
+        <PropertyRef Name="FormaPagamentoID" />
+      </Principal>
+      <Dependent Role="EB_LancamentoAdiantamentos">
+        <PropertyRef Name="FormaPagamentoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_LanctoPedidos_fk">
+    <End Role="EB_Cliente" Type="EasyBarModel.Store.EB_Cliente" Multiplicity="1" />
+    <End Role="EB_LanctoPedidos" Type="EasyBarModel.Store.EB_LanctoPedidos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Cliente">
+        <PropertyRef Name="ClienteID" />
+      </Principal>
+      <Dependent Role="EB_LanctoPedidos">
+        <PropertyRef Name="ClienteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_LanctoPedidos_fk2">
+    <End Role="EB_Endereco" Type="EasyBarModel.Store.EB_Endereco" Multiplicity="1" />
+    <End Role="EB_LanctoPedidos" Type="EasyBarModel.Store.EB_LanctoPedidos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Endereco">
+        <PropertyRef Name="EnderecoID" />
+      </Principal>
+      <Dependent Role="EB_LanctoPedidos">
+        <PropertyRef Name="EnderecoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_LanctoPedidos_fk3">
+    <End Role="EB_Lancamento" Type="EasyBarModel.Store.EB_Lancamento" Multiplicity="1" />
+    <End Role="EB_LanctoPedidos" Type="EasyBarModel.Store.EB_LanctoPedidos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Lancamento">
+        <PropertyRef Name="LanctoID" />
+      </Principal>
+      <Dependent Role="EB_LanctoPedidos">
+        <PropertyRef Name="LanctoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_PlanoContas_fk">
+    <End Role="EB_TipoLancto" Type="EasyBarModel.Store.EB_TipoLancto" Multiplicity="1" />
+    <End Role="EB_PlanoContas" Type="EasyBarModel.Store.EB_PlanoContas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_TipoLancto">
+        <PropertyRef Name="TipoLanctoID" />
+      </Principal>
+      <Dependent Role="EB_PlanoContas">
+        <PropertyRef Name="TipoLanctoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_PlanoContas_fk2">
+    <End Role="EB_PlanoContas" Type="EasyBarModel.Store.EB_PlanoContas" Multiplicity="0..1" />
+    <End Role="EB_PlanoContas1" Type="EasyBarModel.Store.EB_PlanoContas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_PlanoContas">
+        <PropertyRef Name="PlanoContaID" />
+      </Principal>
+      <Dependent Role="EB_PlanoContas1">
+        <PropertyRef Name="Pai" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_PRODU_REFERENCE_EB_PRODU">
+    <End Role="EB_Produto" Type="EasyBarModel.Store.EB_Produto" Multiplicity="0..1" />
+    <End Role="EB_ProdutoComp" Type="EasyBarModel.Store.EB_ProdutoComp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Produto">
+        <PropertyRef Name="ProdutoID" />
+      </Principal>
+      <Dependent Role="EB_ProdutoComp">
+        <PropertyRef Name="ProdutoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EB_ProdutoComp_fk">
+    <End Role="EB_Produto" Type="EasyBarModel.Store.EB_Produto" Multiplicity="1" />
+    <End Role="EB_ProdutoComp" Type="EasyBarModel.Store.EB_ProdutoComp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_Produto">
+        <PropertyRef Name="ProdutoID" />
+      </Principal>
+      <Dependent Role="EB_ProdutoComp">
+        <PropertyRef Name="ProdutoPrincipalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EN_LancamentoCaixaBanco_fk">
+    <End Role="EB_TipoLancto" Type="EasyBarModel.Store.EB_TipoLancto" Multiplicity="0..1" />
+    <End Role="EB_LancamentoCaixaBanco" Type="EasyBarModel.Store.EB_LancamentoCaixaBanco" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_TipoLancto">
+        <PropertyRef Name="TipoLanctoID" />
+      </Principal>
+      <Dependent Role="EB_LancamentoCaixaBanco">
+        <PropertyRef Name="TipoLanctoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EN_LancamentoCaixaBanco_fk2">
+    <End Role="EB_FormaPagamento" Type="EasyBarModel.Store.EB_FormaPagamento" Multiplicity="1" />
+    <End Role="EB_LancamentoCaixaBanco" Type="EasyBarModel.Store.EB_LancamentoCaixaBanco" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_FormaPagamento">
+        <PropertyRef Name="FormaPagamentoID" />
+      </Principal>
+      <Dependent Role="EB_LancamentoCaixaBanco">
+        <PropertyRef Name="formaPagamentoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EN_LancamentoCaixaBanco_fk3">
+    <End Role="EB_ContasDestDesconto" Type="EasyBarModel.Store.EB_ContasDestDesconto" Multiplicity="1" />
+    <End Role="EB_LancamentoCaixaBanco" Type="EasyBarModel.Store.EB_LancamentoCaixaBanco" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EB_ContasDestDesconto">
+        <PropertyRef Name="DestDescontoID" />
+      </Principal>
+      <Dependent Role="EB_LancamentoCaixaBanco">
+        <PropertyRef Name="ContasDestDescontoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="TServerSocket.ServerSocket">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>SrvSckt.cs</FileName>
+      <HashCode>MAAAAAABgACAYgCACAAAgBIAKCAMAFAnQAhACAAQBAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="TServerSocket.ServerSocket.ConnectionDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SrvSckt.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="TServerSocket.ServerSocket.ErrorDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SrvSckt.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="TServerSocket.ServerSocket.ListenDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SrvSckt.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Class Name="TServerSocket.ServerSocket.SocketPacket" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SrvSckt.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+  </Class>
+</ClassDiagram>

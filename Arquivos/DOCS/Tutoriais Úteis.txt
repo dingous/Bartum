@@ -1,0 +1,2 @@
+JOIN USANDO LINQ TO SQL
+http://weblogs.asp.net/rajbk/archive/2010/03/12/joins-in-linq-to-sql.aspx

@@ -1,0 +1,22 @@
+. na tabela EB_TipoVenda inserir o tipo "COMANDA" com o TipoVendaID = 5
+
+SET IDENTITY_INSERT  EB_TipoVenda ON
+INSERT INTO [EasyBarPontoM].[dbo].[EB_TipoVenda]
+           (
+           [TipoVEndaID],
+           [dsTipoVenda]
+           ,[dtCadastro])
+     VALUES
+           (
+           5,
+           'COMANDA',
+           GETDATE())
+GO
+
+. na tabela EB_Lancamento criar o campo ComandaID e criar um índice a este campo.
+
+
+. cadastrar um produto chamado Self-Service com o tipo de unidade KG
+
+.na tabela EB_Produto executar o script abaixo para que todos os produtos fiquem com o padrão de Unidade
+UPDATE EB_PRODUTO SET nrUnidade = 0

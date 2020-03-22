@@ -1,0 +1,8 @@
+﻿
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <tipo>servidor</tipo>
+  <primeiro_acesso>true</primeiro_acesso>
+  <ServidorIP>192.168.1.122</ServidorIP>
+  <ServidorPorta>1000</ServidorPorta>
+</configuration>

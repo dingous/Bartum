@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="EasyBar.Windows.Properties" GeneratedClassName="Clienteconfig">
+  <Profiles />
+  <Settings>
+    <Setting Name="tipo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">servidor</Value>
+    </Setting>
+    <Setting Name="primeiro_acesso" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ServidorIP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">192.168.1.122</Value>
+    </Setting>
+    <Setting Name="ServidorPorta" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1515</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
